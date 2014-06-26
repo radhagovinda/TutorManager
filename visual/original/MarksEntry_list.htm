@@ -411,7 +411,12 @@
 
 																		{BEGIN listIcons_column}
 									<td class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>
-									
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+									<a class="runner-button-img" {$editlink_attrs} title="Edit"><img class="runner-cicon" src="images/icon_edit_new.gif" alt="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
 																		{BEGIN inlineedit_column}
 									{BEGIN inlineedit_link}
 									<a class="runner-button-img" {$inlineeditlink_attrs} title="Inline Edit"><img class="runner-cicon" src="images/icon_inline_edit_new.gif" alt="Inline Edit"></a>

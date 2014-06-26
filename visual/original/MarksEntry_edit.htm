@@ -35,9 +35,9 @@
 
 
 <tr class="runner-toprow style2 header"><td class="runner-cl"><img src="images/spacer.gif"></td><td class="runner-cc" ><div  class="runner-b-editheader {$brickclass_editheader}">Marks Entry, Edit record [
-ID: {$show_key1}
+Student: {$show_key1}
 ,
-Student: {$show_key2}
+Batch: {$show_key2}
 ]</div></td><td class="runner-cr"><img src="images/spacer.gif"></td></tr>
 
 
@@ -52,134 +52,8 @@ Student: {$show_key2}
 <table class="runner-c runner-c-fields" cellpadding="0" >
 
 
-	{BEGIN StudentID_fieldblock}
-	<tr class="runner-toprow header style1 runner-b-editfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_StudentID {$fielddispclass_StudentID}">
-				{BEGIN StudentID_label}Student{END StudentID_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_StudentID {$fielddispclass_StudentID}">
-				{$StudentID_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"><img src="images/spacer.gif"></td></tr>
-{END StudentID_fieldblock}
-	{BEGIN FullBatchName_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_FullBatchName {$fielddispclass_FullBatchName}">
-				{BEGIN FullBatchName_label}Full Batch Name{END FullBatchName_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_FullBatchName {$fielddispclass_FullBatchName}">
-				{$FullBatchName_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END FullBatchName_fieldblock}
-	{BEGIN Subject_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_Subject {$fielddispclass_Subject}">
-				{BEGIN Subject_label}Subject{END Subject_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_Subject {$fielddispclass_Subject}">
-				{$Subject_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END Subject_fieldblock}
-	{BEGIN Class_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_Class {$fielddispclass_Class}">
-				{BEGIN Class_label}Class{END Class_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_Class {$fielddispclass_Class}">
-				{$Class_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END Class_fieldblock}
-	{BEGIN ID_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_ID {$fielddispclass_ID}">
-				{BEGIN ID_label}ID{END ID_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_ID {$fielddispclass_ID}">
-				{$ID_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END ID_fieldblock}
-	{BEGIN BatchID_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_BatchID {$fielddispclass_BatchID}">
-				{BEGIN BatchID_label}Batch{END BatchID_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_BatchID {$fielddispclass_BatchID}">
-				{$BatchID_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END BatchID_fieldblock}
-	{BEGIN BatchName_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_BatchName {$fielddispclass_BatchName}">
-				{BEGIN BatchName_label}Batch Name{END BatchName_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_BatchName {$fielddispclass_BatchName}">
-				{$BatchName_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END BatchName_fieldblock}
-	{BEGIN AcademicYear_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_AcademicYear {$fielddispclass_AcademicYear}">
-				{BEGIN AcademicYear_label}Academic Year{END AcademicYear_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_AcademicYear {$fielddispclass_AcademicYear}">
-				{$AcademicYear_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END AcademicYear_fieldblock}
-	{BEGIN FullName_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
-		<td class="runner-cc runner-cc1">
-			<div class="fieldlabel_FullName {$fielddispclass_FullName}">
-				{BEGIN FullName_label}Student Name{END FullName_label}
-			</div>
-		</td>
-		<td class="runner-cc alt runner-fixedcell">
-			<div class="fieldcontrol_FullName {$fielddispclass_FullName}">
-				{$FullName_editcontrol}&nbsp;
-			</div>
-		</td>
-	<td class="runner-cr alt"></td></tr>
-{END FullName_fieldblock}
 	{BEGIN MarksObtained_fieldblock}
-	<tr class="runner-row style1 runner-b-editfields"><td class="runner-cl"></td>
+	<tr class="runner-toprow header style1 runner-b-editfields"><td class="runner-cl"><img src="images/spacer.gif"></td>
 		<td class="runner-cc runner-cc1">
 			<div class="fieldlabel_MarksObtained {$fielddispclass_MarksObtained}">
 				{BEGIN MarksObtained_label}Marks Obtained{END MarksObtained_label}
@@ -190,7 +64,7 @@ Student: {$show_key2}
 				{$MarksObtained_editcontrol}&nbsp;
 			</div>
 		</td>
-	<td class="runner-cr alt"></td></tr>
+	<td class="runner-cr alt"><img src="images/spacer.gif"></td></tr>
 {END MarksObtained_fieldblock}
 
 
