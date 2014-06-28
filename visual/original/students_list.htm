@@ -30,6 +30,38 @@
 				<td class="runner-top" colspan=3>
 					
 
+{BEGIN container_master}
+<table class="runner-c runner-c-master" cellpadding="0" >
+<tr class="{$cheaderclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+<tr class="runner-row style1">
+<td class="runner-cl"></td>
+<td class="runner-cc">
+<table border="0" cellpadding="0" class="runner-hc">
+<tr>
+
+{BEGIN mastertable_block}
+<td  class="runner-cc runner-bl runner-b-masterinfo" {$brickclass_masterinfo}><span>{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Back to {$backtomasterlink_caption}</b>
+</a></span></td>
+{END mastertable_block}
+
+<td class="runner-cc filler"></td>
+</tr>
+</table></td>
+<td class="runner-cr"></td>
+</tr>
+
+<tr class="{$cfooterclass_master}">
+<td class="runner-cl"><img src="images/spacer.gif"></td>
+<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
+</tr>
+</table>
+{END container_master}
+
 
 
 {BEGIN container_toplinks}
@@ -216,6 +248,15 @@
 	</span>
 </div>
   {END adminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
 </div>
 </td><td class="runner-cr"></td></tr>{END security_block}
 
@@ -372,7 +413,7 @@
 																		{BEGIN students_dtable_column}
 									<th class="runner-cc">&nbsp;</th>
 									{END students_dtable_column}
-																																			{BEGIN FullName_fieldheadercolumn}
+																										{BEGIN FullName_fieldheadercolumn}
 									<th class="runner-cc ">
 									{BEGIN FullName_fieldheader}
 																				<a {$FullName_orderlinkattrs}>
@@ -458,16 +499,7 @@
 
 																		{BEGIN students_dtable_column}
 									<td class="runner-cc runner-nowrap" {$rowstyle}>
-									{BEGIN student_batch_dtable_link}
-									<span>
-									<a {$student_batch_dtablelink_attrs}>
-										Student Batch
-																				<span {$student_batch_childnumber_attr} dir="ltr">{BEGIN student_batch_childcount}({$student_batch_childnumber}){END student_batch_childcount}</span>
-									</a>
-																		&nbsp;
-									</span>
-									{END student_batch_dtable_link}
-																											{BEGIN exam_result_dtable_link}
+									{BEGIN exam_result_dtable_link}
 									<span>
 									<a {$exam_result_dtablelink_attrs}>
 										Exam Result
@@ -528,7 +560,7 @@
 																		{BEGIN students_dtable_column}
 									<td class="runner-cc"></td>
 									{END students_dtable_column}
-									
+
 									{BEGIN FullName_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END FullName_fieldheadercolumn}

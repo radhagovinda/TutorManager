@@ -248,6 +248,15 @@
 	</span>
 </div>
   {END adminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
 </div>
 </td><td class="runner-cr"></td></tr>{END security_block}
 
@@ -425,7 +434,15 @@
 																		{BEGIN student_batch_dtable_column}
 									<th class="runner-cc">&nbsp;</th>
 									{END student_batch_dtable_column}
-																										{BEGIN StudentID_fieldheadercolumn}
+																																			{BEGIN Photo_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN Photo_fieldheader}
+																				Photo
+									{END Photo_fieldheader}
+									</th>
+									{END Photo_fieldheadercolumn}
+
+																	{BEGIN StudentID_fieldheadercolumn}
 									<th class="runner-cc ">
 									{BEGIN StudentID_fieldheader}
 																				<a {$StudentID_orderlinkattrs}>
@@ -504,13 +521,28 @@
 										Student Payment
 																				<span {$student_payment_childnumber_attr} dir="ltr">{BEGIN student_payment_childcount}({$student_payment_childnumber}){END student_payment_childcount}</span>
 									</a>
-																		&nbsp;
+																		</br>
 									</span>
 									{END student_payment_dtable_link}
+																											{BEGIN students_dtable_link}
+									<span>
+									<a {$students_dtablelink_attrs}>
+										Students
+																				<span {$students_childnumber_attr} dir="ltr">{BEGIN students_childcount}({$students_childnumber}){END students_childcount}</span>
+									</a>
+																		</br>
+									</span>
+									{END students_dtable_link}
 																		</td>
 									{END student_batch_dtable_column}
 
-										{BEGIN StudentID_fieldcolumn}
+										{BEGIN Photo_fieldcolumn}
+	<td class="runner-cc  {$Photo_class}" {$Photo_style}>
+		{$Photo_value}
+	</td>
+{END Photo_fieldcolumn}
+
+	{BEGIN StudentID_fieldcolumn}
 	<td class="runner-cc  {$StudentID_class}" {$StudentID_style}>
 		{$StudentID_value}
 	</td>
@@ -553,8 +585,11 @@
 																		{BEGIN student_batch_dtable_column}
 									<td class="runner-cc"></td>
 									{END student_batch_dtable_column}
-
-									{BEGIN StudentID_fieldheadercolumn}
+									
+									{BEGIN Photo_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END Photo_fieldheadercolumn}
+{BEGIN StudentID_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END StudentID_fieldheadercolumn}
 {BEGIN BatchID_fieldheadercolumn}

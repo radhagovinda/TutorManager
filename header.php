@@ -37,8 +37,10 @@ body {
   <tr>
     <td background="images/bg.png"><table width="100%" border="0" cellspacing="5" cellpadding="10">
       <tr>
-        <td height="100"><span class="style1"><span class="style3">Tuition Manager</span><br />
-          <span class="style2">Manage your students/Attendance/Exams more efficiently</span></span></td>
+        <td height="100"><span class="style1"><span class="style3"><img name="" src="" width="50" height="32" alt="" />Tuition Manager</span><br />
+          <span class="style2"><span class="style3"><img name="" src="" width="50" height="32" alt="" /></span>Manage your students/Attendance/Exams more efficiently</span></span></td>
+      </tr>
+      <tr><td><a href="menu.php"><span class="style3"><img name="" src="" width="50" height="32" alt="" /></span><img src="images/home-65.png" width="68" height="64" border="0" /></a></td>
       </tr>
     </table></td>
   </tr>

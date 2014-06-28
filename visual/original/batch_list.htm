@@ -216,6 +216,15 @@
 	</span>
 </div>
   {END adminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
 </div>
 </td><td class="runner-cr"></td></tr>{END security_block}
 
@@ -472,7 +481,7 @@
 										Student Batch
 																				<span {$student_batch_childnumber_attr} dir="ltr">{BEGIN student_batch_childcount}({$student_batch_childnumber}){END student_batch_childcount}</span>
 									</a>
-																		&nbsp;
+																		</br>
 									</span>
 									{END student_batch_dtable_link}
 																		</td>

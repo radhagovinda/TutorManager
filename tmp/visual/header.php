@@ -33,10 +33,17 @@ body {
       <TABLE cellSpacing=5 cellPadding=10 width="100%" border=0>
         <TBODY>
         <TR>
-          <TD height=100><SPAN class=style1><SPAN class=style3>Tuition 
-            Manager</SPAN><BR><SPAN class=style2>Manage your 
-            students/Attendance/Exams more 
-        efficiently</SPAN></SPAN></TD></TR></TBODY></TABLE></TD></TR>
+          <TD height=100><SPAN class=style1><SPAN class=style3><IMG alt="" 
+            src="" width=50 height=32>Tuition Manager</SPAN><BR><SPAN 
+            class=style2><SPAN class=style3><IMG alt="" src="" width=50 
+            height=32></SPAN>Manage your students/Attendance/Exams more 
+            efficiently</SPAN></SPAN></TD></TR>
+        <TR>
+          <TD><A href="menu.php"><SPAN class=style3><IMG alt="" src="" 
+            width=50 
+            height=32></SPAN><IMG 
+            border=0 src="images/home-65.png" width=68 
+            height=64></A></TD></TR></TBODY></TABLE></TD></TR>
   <TR>
     <TD height=10 background=images/header-w.png><IMG alt="" src="" width=32 
       height=10></TD></TR></TBODY></TABLE>
