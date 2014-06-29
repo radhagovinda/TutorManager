@@ -40,10 +40,10 @@ body {
             efficiently</SPAN></SPAN></TD></TR>
         <TR>
           <TD><A href="menu.php"><SPAN class=style3><IMG alt="" src="" 
-            width=50 
-            height=32></SPAN><IMG 
-            border=0 src="images/home-65.png" width=68 
-            height=64></A></TD></TR></TBODY></TABLE></TD></TR>
+            width=50 height=32></SPAN><IMG border=0 src="images/home-65.png" 
+            width=68 align=absMiddle height=64></A><A 
+            href="http://pradipmathsir.eduz.in"><FONT color=#ffffff><B>Go to 
+            Main Site</B></FONT></A></TD></TR></TBODY></TABLE></TD></TR>
   <TR>
     <TD height=10 background=images/header-w.png><IMG alt="" src="" width=32 
       height=10></TD></TR></TBODY></TABLE>

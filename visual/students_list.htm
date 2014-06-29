@@ -33,7 +33,16 @@
         <TR class="runner-row style1"><TD class=runner-cl></TD>
           <TD class=runner-cc><TABLE class=runner-hc cellPadding=0 border=0><TR><TD class="runner-cc filler"></TD>
                 {BEGIN asearch_link}<TD class="runner-cc runner-br runner-b-toplinks_advsearch" {$brickclass_toplinks_advsearch}><SPAN><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$advsearchlink_attrs}>Advanced 
-                  search</A> </SPAN></SPAN></TD>{END asearch_link}</TR></TABLE></TD>
+                  search</A> </SPAN></SPAN></TD>{END asearch_link}{BEGIN export_link}<td  class="runner-cc runner-br runner-b-toplinks_export" {$brickclass_toplinks_export}><span><span class="runner-btnframe"><span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a target="_blank" href="students_export.php" class="runner-button" {$exportlink_attrs}>Export results</a>
+	</span>
+</span></td>
+{END export_link}
+
+
+
+</TR></TABLE></TD>
           <TD class=runner-cr></TD></TR>
         <TR class="{$cfooterclass_toplinks}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
@@ -90,7 +99,14 @@
           <TD class=runner-cc><TABLE class=runner-hc cellPadding=0 border=0><TR>{BEGIN newrecord_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><SPAN>{BEGIN add_link}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$addlink_attrs}>Add New 
                   Student</A> </SPAN>{END add_link}</SPAN></TD>
                 {END newrecord_controls_block}{BEGIN record_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><SPAN>{BEGIN deleteselected_link}<SPAN class=runner-btnframe {$deleteselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$deleteselectedlink_attrs}>Delete selected</A> 
-                  </SPAN>{END deleteselected_link}</SPAN></TD>
+                  </SPAN>{END deleteselected_link}{BEGIN exportselected_link}<span class="runner-btnframe" {$exportselectedlink_span}><span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$exportselectedlink_attrs}>Export selected</a>
+		</span>
+	{END exportselected_link}
+
+	
+</SPAN></TD>
                 {END record_controls_block}<TD class="runner-cc filler"><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send SMS to 
                   Selected Students</A> 
                   </SPAN></TD></TR></TABLE></TD>
