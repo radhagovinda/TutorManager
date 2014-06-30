@@ -129,11 +129,34 @@
             {$checkboxheader_attrs}></TH>
           {END checkbox_column}{BEGIN students_dtable_column}<TH class=runner-cc></TH>
           {END students_dtable_column}{BEGIN FullName_fieldheadercolumn}<TH class="runner-cc ">{BEGIN FullName_fieldheader}<A {$FullName_orderlinkattrs}>Full Name </A>{END FullName_fieldheader}</TH>
-          {END FullName_fieldheadercolumn}{BEGIN IsActive_fieldheadercolumn}<TH class="runner-cc ">{BEGIN IsActive_fieldheader}<A {$IsActive_orderlinkattrs}>Is Active </A>{END IsActive_fieldheader}</TH>
-          {END IsActive_fieldheadercolumn}{BEGIN Photo_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Photo_fieldheader}
-            Photo {END Photo_fieldheader}</TH>
-          {END Photo_fieldheadercolumn}{BEGIN MobileNumber_fieldheadercolumn}<TH class="runner-cc runner-clast">{BEGIN MobileNumber_fieldheader}<A {$MobileNumber_orderlinkattrs}>Mobile # </A>{END MobileNumber_fieldheader}</TH>
-          {END MobileNumber_fieldheadercolumn}<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
+          {END FullName_fieldheadercolumn}{BEGIN DOB_fieldheadercolumn}<th class="runner-cc ">{BEGIN DOB_fieldheader}<a {$DOB_orderlinkattrs}>
+											DOB
+										</a>
+									{END DOB_fieldheader}
+									</th>
+									{END DOB_fieldheadercolumn}{BEGIN MobileNumber_fieldheadercolumn}<th class="runner-cc ">{BEGIN MobileNumber_fieldheader}<A {$MobileNumber_orderlinkattrs}>Mobile # </A>{END MobileNumber_fieldheader}</th>
+          {END MobileNumber_fieldheadercolumn}
+
+																	{BEGIN FathersName_fieldheadercolumn}<th class="runner-cc ">{BEGIN FathersName_fieldheader}<a {$FathersName_orderlinkattrs}>
+											Father&#39;s Name
+										</a>
+									{END FathersName_fieldheader}
+									</th>
+									{END FathersName_fieldheadercolumn}
+
+																	{BEGIN FathersMobileNumber_fieldheadercolumn}<th class="runner-cc ">{BEGIN FathersMobileNumber_fieldheader}<a {$FathersMobileNumber_orderlinkattrs}>
+											Father&#39;s Mobile #
+										</a>
+									{END FathersMobileNumber_fieldheader}
+									</th>
+									{END FathersMobileNumber_fieldheadercolumn}
+
+																	{BEGIN HomePhoneNumber_fieldheadercolumn}<th class="runner-cc runner-clast">{BEGIN HomePhoneNumber_fieldheader}<a {$HomePhoneNumber_orderlinkattrs}>
+											Home Phone #
+										</a>
+									{END HomePhoneNumber_fieldheader}
+									</th>
+									{END HomePhoneNumber_fieldheadercolumn}<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
           {BEGIN endrecordheader_block}<TH class=runner-cs></TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
         {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}<TD class=runner-cl {$rowstyle}></TD>
           {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" {$rowstyle} iEditCont="all">{BEGIN edit_column}{BEGIN edit_link}<A title=Edit class=runner-button-img {$editlink_attrs}><IMG class=runner-cicon alt=Edit src="images/icon_edit_new.gif"></A> {END edit_link}{END edit_column}{BEGIN view_column}{BEGIN view_link}<A title=View class=runner-button-img {$viewlink_attrs}><IMG class=runner-cicon alt=View src="images/icon_view_new.gif"></A>{END view_link}{END view_column}</TD>
@@ -142,20 +165,37 @@
             Result <SPAN dir=ltr {$exam_result_childnumber_attr}>{BEGIN exam_result_childcount}({$exam_result_childnumber}){END exam_result_childcount}</SPAN> </A>&nbsp; 
             </SPAN>{END exam_result_dtable_link}</TD>
           {END students_dtable_column}{BEGIN FullName_fieldcolumn}<TD class="runner-cc  {$FullName_class}" {$FullName_style}>{$FullName_value}</TD>
-          {END FullName_fieldcolumn}{BEGIN IsActive_fieldcolumn}<TD class="runner-cc  {$IsActive_class}" {$IsActive_style}>{$IsActive_value}</TD>
-          {END IsActive_fieldcolumn}{BEGIN Photo_fieldcolumn}<TD class="runner-cc  {$Photo_class}" {$Photo_style}>{$Photo_value}</TD>
-          {END Photo_fieldcolumn}{BEGIN MobileNumber_fieldcolumn}<TD class="runner-cc runner-clast {$MobileNumber_class}" {$MobileNumber_style}>{$MobileNumber_value}</TD>
-          {END MobileNumber_fieldcolumn}<TD class=runner-cr {$rowstyle}></TD>
+          {END FullName_fieldcolumn}{BEGIN DOB_fieldcolumn}<td class="runner-cc  {$DOB_class}" {$DOB_style}>{$DOB_value}
+	</td>
+{END DOB_fieldcolumn}{BEGIN MobileNumber_fieldcolumn}<td class="runner-cc  {$MobileNumber_class}" {$MobileNumber_style}>{$MobileNumber_value}</td>
+          {END MobileNumber_fieldcolumn}
+
+	{BEGIN FathersName_fieldcolumn}<td class="runner-cc  {$FathersName_class}" {$FathersName_style}>{$FathersName_value}
+	</td>
+{END FathersName_fieldcolumn}
+
+	{BEGIN FathersMobileNumber_fieldcolumn}<td class="runner-cc  {$FathersMobileNumber_class}" {$FathersMobileNumber_style}>{$FathersMobileNumber_value}
+	</td>
+{END FathersMobileNumber_fieldcolumn}
+
+	{BEGIN HomePhoneNumber_fieldcolumn}<td class="runner-cc runner-clast {$HomePhoneNumber_class}" {$HomePhoneNumber_style}>{$HomePhoneNumber_value}
+	</td>
+{END HomePhoneNumber_fieldcolumn}<TD class=runner-cr {$rowstyle}></TD>
           {BEGIN endrecord_block}<TD class=runner-cs {$endrecordblock_attrs}></TD>{END endrecord_block}{END grid_record}</TR>
         {END grid_row}{BEGIN grid_footer}<TR class="runner-bottomrow style1{$gridFooter_class}">{BEGIN record_footer}<TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
           {END checkbox_column}{BEGIN students_dtable_column}<TD class=runner-cc></TD>
           {END students_dtable_column}{BEGIN FullName_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END FullName_fieldheadercolumn}{BEGIN IsActive_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END IsActive_fieldheadercolumn}{BEGIN Photo_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END Photo_fieldheadercolumn}{BEGIN MobileNumber_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
-          {END MobileNumber_fieldheadercolumn}<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
+          {END FullName_fieldheadercolumn}{BEGIN DOB_fieldheadercolumn}<td class="runner-cc "></td>
+{END DOB_fieldheadercolumn}{BEGIN MobileNumber_fieldheadercolumn}<td class="runner-cc "></td>
+          {END MobileNumber_fieldheadercolumn}
+{BEGIN FathersName_fieldheadercolumn}<td class="runner-cc "></td>
+{END FathersName_fieldheadercolumn}
+{BEGIN FathersMobileNumber_fieldheadercolumn}<td class="runner-cc "></td>
+{END FathersMobileNumber_fieldheadercolumn}
+{BEGIN HomePhoneNumber_fieldheadercolumn}<td class="runner-cc runner-clast"></td>
+{END HomePhoneNumber_fieldheadercolumn}<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
           {BEGIN endrecordfooter_block}<TD class=runner-cs></TD>{END endrecordfooter_block}{END record_footer}</TR>{END grid_footer}</TABLE>{END grid_block}{END container_grid}
       {BEGIN container_pagination}<TABLE class="runner-c runner-c-pagination" cellPadding=0><TR class="{$cheaderclass_pagination}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>

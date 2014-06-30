@@ -439,26 +439,18 @@
 									</th>
 									{END FullName_fieldheadercolumn}
 
-																	{BEGIN IsActive_fieldheadercolumn}
+																	{BEGIN DOB_fieldheadercolumn}
 									<th class="runner-cc ">
-									{BEGIN IsActive_fieldheader}
-																				<a {$IsActive_orderlinkattrs}>
-											Is Active
+									{BEGIN DOB_fieldheader}
+																				<a {$DOB_orderlinkattrs}>
+											DOB
 										</a>
-									{END IsActive_fieldheader}
+									{END DOB_fieldheader}
 									</th>
-									{END IsActive_fieldheadercolumn}
-
-																	{BEGIN Photo_fieldheadercolumn}
-									<th class="runner-cc ">
-									{BEGIN Photo_fieldheader}
-																				Photo
-									{END Photo_fieldheader}
-									</th>
-									{END Photo_fieldheadercolumn}
+									{END DOB_fieldheadercolumn}
 
 																	{BEGIN MobileNumber_fieldheadercolumn}
-									<th class="runner-cc runner-clast">
+									<th class="runner-cc ">
 									{BEGIN MobileNumber_fieldheader}
 																				<a {$MobileNumber_orderlinkattrs}>
 											Mobile #
@@ -466,6 +458,36 @@
 									{END MobileNumber_fieldheader}
 									</th>
 									{END MobileNumber_fieldheadercolumn}
+
+																	{BEGIN FathersName_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN FathersName_fieldheader}
+																				<a {$FathersName_orderlinkattrs}>
+											Father&#39;s Name
+										</a>
+									{END FathersName_fieldheader}
+									</th>
+									{END FathersName_fieldheadercolumn}
+
+																	{BEGIN FathersMobileNumber_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN FathersMobileNumber_fieldheader}
+																				<a {$FathersMobileNumber_orderlinkattrs}>
+											Father&#39;s Mobile #
+										</a>
+									{END FathersMobileNumber_fieldheader}
+									</th>
+									{END FathersMobileNumber_fieldheadercolumn}
+
+																	{BEGIN HomePhoneNumber_fieldheadercolumn}
+									<th class="runner-cc runner-clast">
+									{BEGIN HomePhoneNumber_fieldheader}
+																				<a {$HomePhoneNumber_orderlinkattrs}>
+											Home Phone #
+										</a>
+									{END HomePhoneNumber_fieldheader}
+									</th>
+									{END HomePhoneNumber_fieldheadercolumn}
 
 
 									
@@ -533,23 +555,35 @@
 	</td>
 {END FullName_fieldcolumn}
 
-	{BEGIN IsActive_fieldcolumn}
-	<td class="runner-cc  {$IsActive_class}" {$IsActive_style}>
-		{$IsActive_value}
+	{BEGIN DOB_fieldcolumn}
+	<td class="runner-cc  {$DOB_class}" {$DOB_style}>
+		{$DOB_value}
 	</td>
-{END IsActive_fieldcolumn}
-
-	{BEGIN Photo_fieldcolumn}
-	<td class="runner-cc  {$Photo_class}" {$Photo_style}>
-		{$Photo_value}
-	</td>
-{END Photo_fieldcolumn}
+{END DOB_fieldcolumn}
 
 	{BEGIN MobileNumber_fieldcolumn}
-	<td class="runner-cc runner-clast {$MobileNumber_class}" {$MobileNumber_style}>
+	<td class="runner-cc  {$MobileNumber_class}" {$MobileNumber_style}>
 		{$MobileNumber_value}
 	</td>
 {END MobileNumber_fieldcolumn}
+
+	{BEGIN FathersName_fieldcolumn}
+	<td class="runner-cc  {$FathersName_class}" {$FathersName_style}>
+		{$FathersName_value}
+	</td>
+{END FathersName_fieldcolumn}
+
+	{BEGIN FathersMobileNumber_fieldcolumn}
+	<td class="runner-cc  {$FathersMobileNumber_class}" {$FathersMobileNumber_style}>
+		{$FathersMobileNumber_value}
+	</td>
+{END FathersMobileNumber_fieldcolumn}
+
+	{BEGIN HomePhoneNumber_fieldcolumn}
+	<td class="runner-cc runner-clast {$HomePhoneNumber_class}" {$HomePhoneNumber_style}>
+		{$HomePhoneNumber_value}
+	</td>
+{END HomePhoneNumber_fieldcolumn}
 
 
 																		<td class="runner-cr" {$rowstyle}></td>
@@ -580,15 +614,21 @@
 									{BEGIN FullName_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END FullName_fieldheadercolumn}
-{BEGIN IsActive_fieldheadercolumn}
+{BEGIN DOB_fieldheadercolumn}
 <td class="runner-cc "></td>
-{END IsActive_fieldheadercolumn}
-{BEGIN Photo_fieldheadercolumn}
-<td class="runner-cc "></td>
-{END Photo_fieldheadercolumn}
+{END DOB_fieldheadercolumn}
 {BEGIN MobileNumber_fieldheadercolumn}
-<td class="runner-cc runner-clast"></td>
+<td class="runner-cc "></td>
 {END MobileNumber_fieldheadercolumn}
+{BEGIN FathersName_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END FathersName_fieldheadercolumn}
+{BEGIN FathersMobileNumber_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END FathersMobileNumber_fieldheadercolumn}
+{BEGIN HomePhoneNumber_fieldheadercolumn}
+<td class="runner-cc runner-clast"></td>
+{END HomePhoneNumber_fieldheadercolumn}
 
 									<td class="runner-cr"><img src="images/spacer.gif"></td>
 									

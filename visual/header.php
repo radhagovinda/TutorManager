@@ -40,8 +40,7 @@ body {
             efficiently</SPAN></SPAN></TD></TR>
         <TR>
           <TD><A href="menu.php"><SPAN class=style3><IMG alt="" src="" 
-            width=50 height=32></SPAN><IMG border=0 src="images/home-65.png" 
-            width=68 align=absMiddle height=64></A><A 
+            width=50 height=32></SPAN><IMG border=0 src="images/home-65.png" width=68 align=absMiddle height=64></A><A 
             href="http://pradipmathsir.eduz.in"><FONT color=#ffffff><B>Go to 
             Main Site</B></FONT></A></TD></TR></TBODY></TABLE></TD></TR>
   <TR>

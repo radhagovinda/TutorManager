@@ -28907,7 +28907,8 @@ $i &gt;0;
 
 //**********  Insert a record into another table  ************
 
-$sql = "INSERT INTO student_batch (StudentID, BatchID) values ('$studentID', '$key')";
+//$sql = "INSERT INTO student_batch (StudentID, BatchID) values ('$studentID', '$key')";
+$sql = "INSERT INTO student_batch (StudentID, BatchID) values ('".$studentID."', '".$_SESSION['BatchID']."')";
 CustomQuery($sql);
 
 }
@@ -29167,7 +29168,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nDataType>3</m_nDataType>
 					<m_bAutoInc>1</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>1</m_nReportPageOrder>
+					<m_nReportPageOrder>0</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -29353,7 +29354,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>1</m_bListPage>
+					<m_bListPage>0</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -29366,16 +29367,16 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>2</m_nAddPageOrder>
 					<m_nEditPageOrder>2</m_nEditPageOrder>
 					<m_nListPageOrder>3</m_nListPageOrder>
-					<m_nViewPageOrder>2</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>2</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>2</m_nPrinterPageOrder>
-					<m_nExportPageOrder>2</m_nExportPageOrder>
-					<m_nMasterListOrder>2</m_nMasterListOrder>
-					<m_nMasterPrintOrder>2</m_nMasterPrintOrder>
+					<m_nViewPageOrder>4</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>3</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>3</m_nPrinterPageOrder>
+					<m_nExportPageOrder>3</m_nExportPageOrder>
+					<m_nMasterListOrder>3</m_nMasterListOrder>
+					<m_nMasterPrintOrder>3</m_nMasterPrintOrder>
 					<m_nDataType>128</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>2</m_nReportPageOrder>
+					<m_nReportPageOrder>3</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -30647,16 +30648,16 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>0</m_nAddPageOrder>
 					<m_nEditPageOrder>0</m_nEditPageOrder>
 					<m_nListPageOrder>1</m_nListPageOrder>
-					<m_nViewPageOrder>0</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>0</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>0</m_nPrinterPageOrder>
-					<m_nExportPageOrder>0</m_nExportPageOrder>
-					<m_nMasterListOrder>0</m_nMasterListOrder>
-					<m_nMasterPrintOrder>0</m_nMasterPrintOrder>
+					<m_nViewPageOrder>1</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>1</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>1</m_nPrinterPageOrder>
+					<m_nExportPageOrder>1</m_nExportPageOrder>
+					<m_nMasterListOrder>1</m_nMasterListOrder>
+					<m_nMasterPrintOrder>1</m_nMasterPrintOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>7</m_nReportPageOrder>
+					<m_nReportPageOrder>1</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -30842,7 +30843,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>0</m_bListPage>
+					<m_bListPage>1</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -30854,17 +30855,17 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bInlineEdit>0</m_bInlineEdit>
 					<m_nAddPageOrder>11</m_nAddPageOrder>
 					<m_nEditPageOrder>9</m_nEditPageOrder>
-					<m_nListPageOrder>9</m_nListPageOrder>
-					<m_nViewPageOrder>9</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>9</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>9</m_nPrinterPageOrder>
-					<m_nExportPageOrder>9</m_nExportPageOrder>
-					<m_nMasterListOrder>9</m_nMasterListOrder>
-					<m_nMasterPrintOrder>9</m_nMasterPrintOrder>
+					<m_nListPageOrder>4</m_nListPageOrder>
+					<m_nViewPageOrder>7</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>4</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>4</m_nPrinterPageOrder>
+					<m_nExportPageOrder>4</m_nExportPageOrder>
+					<m_nMasterListOrder>4</m_nMasterListOrder>
+					<m_nMasterPrintOrder>4</m_nMasterPrintOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>9</m_nReportPageOrder>
+					<m_nReportPageOrder>4</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -31063,7 +31064,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>7</m_nAddPageOrder>
 					<m_nEditPageOrder>7</m_nEditPageOrder>
 					<m_nListPageOrder>7</m_nListPageOrder>
-					<m_nViewPageOrder>7</m_nViewPageOrder>
+					<m_nViewPageOrder>5</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>7</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>7</m_nPrinterPageOrder>
 					<m_nExportPageOrder>7</m_nExportPageOrder>
@@ -31258,7 +31259,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>0</m_bListPage>
+					<m_bListPage>1</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -31270,17 +31271,17 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bInlineEdit>0</m_bInlineEdit>
 					<m_nAddPageOrder>8</m_nAddPageOrder>
 					<m_nEditPageOrder>8</m_nEditPageOrder>
-					<m_nListPageOrder>8</m_nListPageOrder>
-					<m_nViewPageOrder>8</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>8</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>8</m_nPrinterPageOrder>
-					<m_nExportPageOrder>8</m_nExportPageOrder>
-					<m_nMasterListOrder>8</m_nMasterListOrder>
-					<m_nMasterPrintOrder>8</m_nMasterPrintOrder>
+					<m_nListPageOrder>2</m_nListPageOrder>
+					<m_nViewPageOrder>6</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>2</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>2</m_nPrinterPageOrder>
+					<m_nExportPageOrder>2</m_nExportPageOrder>
+					<m_nMasterListOrder>2</m_nMasterListOrder>
+					<m_nMasterPrintOrder>2</m_nMasterPrintOrder>
 					<m_nDataType>7</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>8</m_nReportPageOrder>
+					<m_nReportPageOrder>2</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -31334,7 +31335,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					</m_viewFormats>
 					<m_editFormats>
 						<v>
-							<m_nSize>143</m_nSize>
+							<m_nSize>206</m_nSize>
 							<m_nMaxLength>0</m_nMaxLength>
 							<m_bRequired>0</m_bRequired>
 							<m_nSelectSize>1</m_nSelectSize>
@@ -31479,7 +31480,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>9</m_nAddPageOrder>
 					<m_nEditPageOrder>10</m_nEditPageOrder>
 					<m_nListPageOrder>10</m_nListPageOrder>
-					<m_nViewPageOrder>10</m_nViewPageOrder>
+					<m_nViewPageOrder>8</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>10</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>10</m_nPrinterPageOrder>
 					<m_nExportPageOrder>10</m_nExportPageOrder>
@@ -31686,17 +31687,17 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bInlineEdit>0</m_bInlineEdit>
 					<m_nAddPageOrder>10</m_nAddPageOrder>
 					<m_nEditPageOrder>11</m_nEditPageOrder>
-					<m_nListPageOrder>4</m_nListPageOrder>
-					<m_nViewPageOrder>11</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>11</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>11</m_nPrinterPageOrder>
-					<m_nExportPageOrder>11</m_nExportPageOrder>
-					<m_nMasterListOrder>11</m_nMasterListOrder>
-					<m_nMasterPrintOrder>11</m_nMasterPrintOrder>
+					<m_nListPageOrder>3</m_nListPageOrder>
+					<m_nViewPageOrder>9</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>3</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>3</m_nPrinterPageOrder>
+					<m_nExportPageOrder>3</m_nExportPageOrder>
+					<m_nMasterListOrder>3</m_nMasterListOrder>
+					<m_nMasterPrintOrder>3</m_nMasterPrintOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>11</m_nReportPageOrder>
+					<m_nReportPageOrder>3</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -31882,7 +31883,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>0</m_bListPage>
+					<m_bListPage>1</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -31894,17 +31895,17 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bInlineEdit>0</m_bInlineEdit>
 					<m_nAddPageOrder>12</m_nAddPageOrder>
 					<m_nEditPageOrder>12</m_nEditPageOrder>
-					<m_nListPageOrder>12</m_nListPageOrder>
-					<m_nViewPageOrder>12</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>12</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>12</m_nPrinterPageOrder>
-					<m_nExportPageOrder>12</m_nExportPageOrder>
-					<m_nMasterListOrder>12</m_nMasterListOrder>
-					<m_nMasterPrintOrder>12</m_nMasterPrintOrder>
+					<m_nListPageOrder>5</m_nListPageOrder>
+					<m_nViewPageOrder>10</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>5</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>5</m_nPrinterPageOrder>
+					<m_nExportPageOrder>5</m_nExportPageOrder>
+					<m_nMasterListOrder>5</m_nMasterListOrder>
+					<m_nMasterPrintOrder>5</m_nMasterPrintOrder>
 					<m_nDataType>3</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>12</m_nReportPageOrder>
+					<m_nReportPageOrder>5</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -32090,7 +32091,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>0</m_bListPage>
+					<m_bListPage>1</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -32102,17 +32103,17 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bInlineEdit>0</m_bInlineEdit>
 					<m_nAddPageOrder>15</m_nAddPageOrder>
 					<m_nEditPageOrder>15</m_nEditPageOrder>
-					<m_nListPageOrder>15</m_nListPageOrder>
-					<m_nViewPageOrder>15</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>15</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>15</m_nPrinterPageOrder>
-					<m_nExportPageOrder>15</m_nExportPageOrder>
-					<m_nMasterListOrder>15</m_nMasterListOrder>
-					<m_nMasterPrintOrder>15</m_nMasterPrintOrder>
+					<m_nListPageOrder>6</m_nListPageOrder>
+					<m_nViewPageOrder>12</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>6</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>6</m_nPrinterPageOrder>
+					<m_nExportPageOrder>6</m_nExportPageOrder>
+					<m_nMasterListOrder>6</m_nMasterListOrder>
+					<m_nMasterPrintOrder>6</m_nMasterPrintOrder>
 					<m_nDataType>3</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>15</m_nReportPageOrder>
+					<m_nReportPageOrder>6</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -32311,7 +32312,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>16</m_nAddPageOrder>
 					<m_nEditPageOrder>16</m_nEditPageOrder>
 					<m_nListPageOrder>16</m_nListPageOrder>
-					<m_nViewPageOrder>16</m_nViewPageOrder>
+					<m_nViewPageOrder>13</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>16</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>16</m_nPrinterPageOrder>
 					<m_nExportPageOrder>16</m_nExportPageOrder>
@@ -32519,7 +32520,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>17</m_nAddPageOrder>
 					<m_nEditPageOrder>17</m_nEditPageOrder>
 					<m_nListPageOrder>17</m_nListPageOrder>
-					<m_nViewPageOrder>17</m_nViewPageOrder>
+					<m_nViewPageOrder>14</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>17</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>17</m_nPrinterPageOrder>
 					<m_nExportPageOrder>17</m_nExportPageOrder>
@@ -32727,7 +32728,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>18</m_nAddPageOrder>
 					<m_nEditPageOrder>18</m_nEditPageOrder>
 					<m_nListPageOrder>18</m_nListPageOrder>
-					<m_nViewPageOrder>18</m_nViewPageOrder>
+					<m_nViewPageOrder>15</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>18</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>18</m_nPrinterPageOrder>
 					<m_nExportPageOrder>18</m_nExportPageOrder>
@@ -32918,8 +32919,8 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>AdmittedOn</m_strName>
 					<m_strSQLExpression>students.AdmittedOn</m_strSQLExpression>
-					<m_strSQLAlias />
-					<m_strTotalsType />
+					<m_strSQLAlias></m_strSQLAlias>
+					<m_strTotalsType></m_strTotalsType>
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
 					<m_bListPage>0</m_bListPage>
@@ -32935,7 +32936,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>1</m_nAddPageOrder>
 					<m_nEditPageOrder>1</m_nEditPageOrder>
 					<m_nListPageOrder>1</m_nListPageOrder>
-					<m_nViewPageOrder>1</m_nViewPageOrder>
+					<m_nViewPageOrder>3</m_nViewPageOrder>
 					<m_nAdvSearchPageOrder>1</m_nAdvSearchPageOrder>
 					<m_nPrinterPageOrder>1</m_nPrinterPageOrder>
 					<m_nExportPageOrder>1</m_nExportPageOrder>
@@ -32960,8 +32961,8 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nImageBorder>0</m_nImageBorder>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam />
-							<m_strFileCustomExpr />
+							<m_strhlParam></m_strhlParam>
+							<m_strFileCustomExpr></m_strFileCustomExpr>
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -32970,18 +32971,18 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField />
-							<m_sLatField />
-							<m_sLonField />
-							<m_sMapDescription />
-							<m_strhlPrefix />
-							<m_strFilename />
-							<m_strCustomExpr />
+							<m_sAddressField></m_sAddressField>
+							<m_sLatField></m_sLatField>
+							<m_sLonField></m_sLonField>
+							<m_sMapDescription></m_sMapDescription>
+							<m_strhlPrefix></m_strhlPrefix>
+							<m_strFilename></m_strFilename>
+							<m_strCustomExpr></m_strCustomExpr>
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField />
+							<m_strTitleField></m_strTitleField>
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
@@ -32989,7 +32990,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
 							<m_strViewFormat>Short Date</m_strViewFormat>
 							<m_page>view</m_page>
-							<m_pluginInitString />
+							<m_pluginInitString></m_pluginInitString>
 							<m_nThumbWidth>72</m_nThumbWidth>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bShowListOfThumbnails>0</m_bShowListOfThumbnails>
@@ -32998,7 +32999,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					</m_viewFormats>
 					<m_editFormats>
 						<v>
-							<m_nSize>143</m_nSize>
+							<m_nSize>212</m_nSize>
 							<m_nMaxLength>0</m_nMaxLength>
 							<m_bRequired>1</m_bRequired>
 							<m_nSelectSize>1</m_nSelectSize>
@@ -33006,10 +33007,10 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nRows>100</m_nRows>
 							<m_strDefaultValue>strftime("%d-%m-%Y")</m_strDefaultValue>
 							<m_bAutoUpdate>0</m_bAutoUpdate>
-							<m_strValidateAs />
-							<m_strRegex />
+							<m_strValidateAs></m_strValidateAs>
+							<m_strRegex></m_strRegex>
 							<m_strRegexMessage>
-								<text />
+								<text></text>
 								<nameType>Text</nameType>
 							</m_strRegexMessage>
 							<m_bTimestamp>0</m_bTimestamp>
@@ -33028,19 +33029,19 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_pLookupObj>
 								<m_nLookupType>1</m_nLookupType>
 								<m_arrListOfValues />
-								<m_strTable />
-								<m_strLinkField />
-								<m_strDisplayField />
-								<m_strOrderBy />
+								<m_strTable></m_strTable>
+								<m_strLinkField></m_strLinkField>
+								<m_strDisplayField></m_strDisplayField>
+								<m_strOrderBy></m_strOrderBy>
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
 								<m_bAllowToAdd>0</m_bAllowToAdd>
 								<m_horizontalLayout>0</m_horizontalLayout>
 								<m_nControlType>0</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
-								<m_strCategoryFilterField />
-								<m_strCategoryControlField />
-								<m_strWhere />
+								<m_strCategoryFilterField></m_strCategoryFilterField>
+								<m_strCategoryControlField></m_strCategoryControlField>
+								<m_strWhere></m_strWhere>
 								<m_bCustomDisplay>0</m_bCustomDisplay>
 								<m_nLinkFieldType>0</m_nLinkFieldType>
 								<m_arrLookupAutocompletionPairs />
@@ -33052,13 +33053,13 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Date</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask />
+							<m_strEditMask></m_strEditMask>
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString />
+							<m_pluginInitString></m_pluginInitString>
 							<m_strAutoUpdateValue />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
@@ -33078,7 +33079,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_bUploadCodeExpression>0</m_bUploadCodeExpression>
 					<m_bDeleteFile>0</m_bDeleteFile>
 					<m_strUploadFolder>files</m_strUploadFolder>
-					<m_codeUploadFolder />
+					<m_codeUploadFolder></m_codeUploadFolder>
 					<m_bAbsolute>0</m_bAbsolute>
 					<m_nFilterOrder>0</m_nFilterOrder>
 					<m_strCodeUploadFolderLanguage>cs</m_strCodeUploadFolderLanguage>
@@ -33130,7 +33131,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
-					<m_bListPage>1</m_bListPage>
+					<m_bListPage>0</m_bListPage>
 					<m_bViewPage>1</m_bViewPage>
 					<m_bPrinterPage>0</m_bPrinterPage>
 					<m_bExportPage>1</m_bExportPage>
@@ -33143,16 +33144,16 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_nAddPageOrder>0</m_nAddPageOrder>
 					<m_nEditPageOrder>0</m_nEditPageOrder>
 					<m_nListPageOrder>2</m_nListPageOrder>
-					<m_nViewPageOrder>0</m_nViewPageOrder>
-					<m_nAdvSearchPageOrder>0</m_nAdvSearchPageOrder>
-					<m_nPrinterPageOrder>0</m_nPrinterPageOrder>
-					<m_nExportPageOrder>0</m_nExportPageOrder>
-					<m_nMasterListOrder>0</m_nMasterListOrder>
-					<m_nMasterPrintOrder>0</m_nMasterPrintOrder>
+					<m_nViewPageOrder>2</m_nViewPageOrder>
+					<m_nAdvSearchPageOrder>2</m_nAdvSearchPageOrder>
+					<m_nPrinterPageOrder>2</m_nPrinterPageOrder>
+					<m_nExportPageOrder>2</m_nExportPageOrder>
+					<m_nMasterListOrder>2</m_nMasterListOrder>
+					<m_nMasterPrintOrder>2</m_nMasterPrintOrder>
 					<m_nDataType>200</m_nDataType>
 					<m_bAutoInc>0</m_bAutoInc>
 					<m_bReportPage>0</m_bReportPage>
-					<m_nReportPageOrder>19</m_nReportPageOrder>
+					<m_nReportPageOrder>2</m_nReportPageOrder>
 					<m_bMin>0</m_bMin>
 					<m_bMax>0</m_bMax>
 					<m_bSum>0</m_bSum>
@@ -33591,7 +33592,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 						<v>City</v>
 						<v>PINCode</v>
 					</m_arrFields>
-					<m_nOrder>14</m_nOrder>
+					<m_nOrder>11</m_nOrder>
 					<m_nGroupId>1</m_nGroupId>
 					<m_bExpand>0</m_bExpand>
 				</v>
@@ -33800,77 +33801,77 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 				<v>
 					<id>FullName</id>
 					<type>0</type>
-					<order>0</order>
+					<order>1</order>
 					<search>fFullName</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>IsActive</id>
 					<type>0</type>
-					<order>0</order>
+					<order>2</order>
 					<search>fIsActive</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>AdmittedOn</id>
 					<type>0</type>
-					<order>1</order>
+					<order>3</order>
 					<search>fAdmittedOn</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>Photo</id>
 					<type>0</type>
-					<order>2</order>
+					<order>4</order>
 					<search>fPhoto</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>Gender</id>
 					<type>0</type>
-					<order>7</order>
+					<order>5</order>
 					<search>fGender</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>DOB</id>
 					<type>0</type>
-					<order>8</order>
+					<order>6</order>
 					<search>fDOB</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>FathersName</id>
 					<type>0</type>
-					<order>9</order>
+					<order>7</order>
 					<search>fFathersName</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>CurrentlyStudyingAt</id>
 					<type>0</type>
-					<order>10</order>
+					<order>8</order>
 					<search>fCurrentlyStudyingAt</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>MobileNumber</id>
 					<type>0</type>
-					<order>11</order>
+					<order>9</order>
 					<search>fMobileNumber</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>FathersMobileNumber</id>
 					<type>0</type>
-					<order>12</order>
+					<order>10</order>
 					<search>fFathersMobileNumber</search>
 					<tabgroup>0</tabgroup>
 				</v>
 				<v>
 					<id>Additional_Info1</id>
 					<type>2</type>
-					<order>14</order>
+					<order>11</order>
 					<search>tAdditional_Info1</search>
 					<tabgroup>0</tabgroup>
 				</v>
@@ -72917,7 +72918,7 @@ return true;</m_strEventCode>
 				<v>-1</v>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>0</m_bHighlightSearchResults>
-			<m_nPartialBuildState>1</m_nPartialBuildState>
+			<m_nPartialBuildState>0</m_nPartialBuildState>
 			<query>
 				<m_sql>SELECT
 0 AS BatchID</m_sql>
@@ -73417,7 +73418,7 @@ return true;</m_strEventCode>
 				<v>-1</v>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>0</m_bHighlightSearchResults>
-			<m_nPartialBuildState>1</m_nPartialBuildState>
+			<m_nPartialBuildState>0</m_nPartialBuildState>
 			<query>
 				<m_sql>SELECT
 0 AS ExamID</m_sql>
@@ -77762,7 +77763,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 					<dbkey>GroupID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1613868</pbclean>
+				<pbclean>1613120</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -77799,7 +77800,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 					<dbkey>GroupID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1613868</pbclean>
+				<pbclean>1613120</pbclean>
 			</v>
 		</dbtables>
 		<m_strCacheConnString>mysql;localhost;orgain_admin;tamal1972;;orgain_tmanagerpmallick;;1</m_strCacheConnString>
@@ -78059,8 +78060,8 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 		<m_bUseBuiltInMailer>1</m_bUseBuiltInMailer>
 	</Registration>
 	<BuildInfo>
-		<m_nBuildTimeLow>-866479552</m_nBuildTimeLow>
-		<m_nBuildTimeHigh>30380761</m_nBuildTimeHigh>
+		<m_nBuildTimeLow>1287421184</m_nBuildTimeLow>
+		<m_nBuildTimeHigh>30381121</m_nBuildTimeHigh>
 		<nonProcessFiles>
 			<v>
 				<filename>D:\PortableApps\PHPRunner6.2\source\classes\advancedsearchcontrol.php</filename>
@@ -81469,7 +81470,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 			</v>
 			<v>
 				<filename>C:\wamp\www\tutormanager\styles\ExtravaganzaBlueWave</filename>
-				<source />
+				<source></source>
 			</v>
 			<v>
 				<filename>C:\wamp\www\tutormanager\student_payment_add.php</filename>
@@ -84832,7 +84833,57 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 				<source>D:\PortableApps\PHPRunner6.2\templates\layouts\export.ly</source>
 			</v>
 		</builtFiles>
-		<m_builtDBTables />
+		<m_builtDBTables>
+			<v>batch</v>
+			<v>class</v>
+			<v>exam_result</v>
+			<v>exams</v>
+			<v>fees_table</v>
+			<v>months</v>
+			<v>msg_sms</v>
+			<v>msg_sms_batch</v>
+			<v>options</v>
+			<v>salutations</v>
+			<v>sms_template</v>
+			<v>student_attendance</v>
+			<v>student_batch</v>
+			<v>student_payment</v>
+			<v>students</v>
+			<v>students_prev_records</v>
+			<v>subjects</v>
+			<v>support_request</v>
+			<v>table10</v>
+			<v>table11</v>
+			<v>table12</v>
+			<v>table13</v>
+			<v>table14</v>
+			<v>table15</v>
+			<v>table16</v>
+			<v>table17</v>
+			<v>table18</v>
+			<v>table19</v>
+			<v>table2</v>
+			<v>table20</v>
+			<v>table21</v>
+			<v>table22</v>
+			<v>table23</v>
+			<v>table24</v>
+			<v>table25</v>
+			<v>table26</v>
+			<v>table27</v>
+			<v>table28</v>
+			<v>table3</v>
+			<v>table4</v>
+			<v>table5</v>
+			<v>table6</v>
+			<v>table7</v>
+			<v>table8</v>
+			<v>table9</v>
+			<v>useraccess_uggroups</v>
+			<v>useraccess_ugmembers</v>
+			<v>useraccess_ugrights</v>
+			<v>users</v>
+		</m_builtDBTables>
 	</BuildInfo>
 	<m_strAppUser>.:[BRD CULT]:.</m_strAppUser>
 	<m_controlLinks />
@@ -84882,7 +84933,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 	<m_customFiles>
 		<v>
 			<m_name>students_list.htm</m_name>
-			<m_origCrc>1251990057</m_origCrc>
+			<m_origCrc>1548892209</m_origCrc>
 		</v>
 		<v>
 			<m_name>batch_list.htm</m_name>
@@ -84970,7 +85021,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 		</v>
 		<v>
 			<m_name>header.php</m_name>
-			<m_origCrc>2076722157</m_origCrc>
+			<m_origCrc>1548892209</m_origCrc>
 		</v>
 	</m_customFiles>
 	<m_mobileFiles />
@@ -84980,7 +85031,7 @@ $smsbalvars = 'username=' . $username . '&amp;password=' . $password;
 	<m_bOldMysqlLib>0</m_bOldMysqlLib>
 	<m_bWebReports>0</m_bWebReports>
 	<m_strWRAdminPassword>webreports</m_strWRAdminPassword>
-	<m_projectBuildNumber>130</m_projectBuildNumber>
+	<m_projectBuildNumber>139</m_projectBuildNumber>
 	<m_FTPlocation />
 	<m_FrontPagelocation />
 	<FTPFiles />
