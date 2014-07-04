@@ -30,38 +30,6 @@
 				<td class="runner-top" colspan=3>
 					
 
-{BEGIN container_master}
-<table class="runner-c runner-c-master" cellpadding="0" >
-<tr class="{$cheaderclass_master}">
-<td class="runner-cl"><img src="images/spacer.gif"></td>
-<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
-</tr>
-<tr class="runner-row style1">
-<td class="runner-cl"></td>
-<td class="runner-cc">
-<table border="0" cellpadding="0" class="runner-hc">
-<tr>
-
-{BEGIN mastertable_block}
-<td  class="runner-cc runner-bl runner-b-masterinfo" {$brickclass_masterinfo}><span>{$showmasterfile}
-<a class="runner-link" {$backtomasterlink_attrs}>
-	<b>Back to {$backtomasterlink_caption}</b>
-</a></span></td>
-{END mastertable_block}
-
-<td class="runner-cc filler"></td>
-</tr>
-</table></td>
-<td class="runner-cr"></td>
-</tr>
-
-<tr class="{$cfooterclass_master}">
-<td class="runner-cl"><img src="images/spacer.gif"></td>
-<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
-</tr>
-</table>
-{END container_master}
-
 
 
 {BEGIN container_toplinks}
@@ -87,15 +55,6 @@
 {END asearch_link}
 
 
-
-{BEGIN export_link}
-<td  class="runner-cc runner-br runner-b-toplinks_export" {$brickclass_toplinks_export}><span>	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a target="_blank" href="students_export.php" class="runner-button" {$exportlink_attrs}>Export results</a>
-	</span>
-</span></td>
-{END export_link}
 
 
 
@@ -323,15 +282,15 @@
 <tr>
 
 {BEGIN newrecord_controls_block}
-<td  class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><span>		{BEGIN add_link}
+<td  class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><span>	
+		{BEGIN inlineadd_link}
 		<span class="runner-btnframe">
 		<span class="runner-btnleft"></span>
 		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$addlink_attrs}>Add new</a>
+		<a href="#" class="runner-button" {$inlineaddlink_attrs}>Inline Add</a>
 		</span>
-	{END add_link}
+	{END inlineadd_link}
 
-	
 
 </span></td>
 {END newrecord_controls_block}
@@ -339,7 +298,28 @@
 
 {BEGIN record_controls_block}
 <td  class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><span>	
-	
+			{BEGIN editselected_link}
+		<span class="runner-btnframe" {$editselectedlink_span}>
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$editselectedlink_attrs}>Edit selected</a>
+		</span>
+	{END editselected_link}
+	{BEGIN saveall_link}
+		<span class="runner-btnframe" {$savealllink_span}>
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$savealllink_attrs}>Save all</a>
+		</span>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<span class="runner-btnframe" {$cancelalllink_span}>
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$cancelalllink_attrs}>Cancel</a>
+		</span>
+	{END cancelall_link}
+
 		{BEGIN deleteselected_link}
 		<span class="runner-btnframe" {$deleteselectedlink_span}>
 		<span class="runner-btnleft"></span>
@@ -348,14 +328,7 @@
 		</span>
 	{END deleteselected_link}
 
-		{BEGIN exportselected_link}
-		<span class="runner-btnframe" {$exportselectedlink_span}>
-		<span class="runner-btnleft"></span>
-		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$exportselectedlink_attrs}>Export selected</a>
-		</span>
-	{END exportselected_link}
-
+	
 	
 </span></td>
 {END record_controls_block}
@@ -426,10 +399,7 @@
 									</th>
 									{END checkbox_column}
 
-																		{BEGIN students_dtable_column}
-									<th class="runner-cc">&nbsp;</th>
-									{END students_dtable_column}
-																																			{BEGIN Photo_fieldheadercolumn}
+																										{BEGIN Photo_fieldheadercolumn}
 									<th class="runner-cc ">
 									{BEGIN Photo_fieldheader}
 																				Photo
@@ -437,15 +407,35 @@
 									</th>
 									{END Photo_fieldheadercolumn}
 
-																	{BEGIN FullName_fieldheadercolumn}
-									<th class="runner-cc runner-clast">
-									{BEGIN FullName_fieldheader}
-																				<a {$FullName_orderlinkattrs}>
-											Full Name
+																	{BEGIN StudentID_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN StudentID_fieldheader}
+																				<a {$StudentID_orderlinkattrs}>
+											Student
 										</a>
-									{END FullName_fieldheader}
+									{END StudentID_fieldheader}
 									</th>
-									{END FullName_fieldheadercolumn}
+									{END StudentID_fieldheadercolumn}
+
+																	{BEGIN BatchID_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN BatchID_fieldheader}
+																				<a {$BatchID_orderlinkattrs}>
+											Batch
+										</a>
+									{END BatchID_fieldheader}
+									</th>
+									{END BatchID_fieldheadercolumn}
+
+																	{BEGIN Fees_fieldheadercolumn}
+									<th class="runner-cc runner-clast">
+									{BEGIN Fees_fieldheader}
+																				<a {$Fees_orderlinkattrs}>
+											Fees
+										</a>
+									{END Fees_fieldheader}
+									</th>
+									{END Fees_fieldheadercolumn}
 
 
 									
@@ -469,20 +459,15 @@
 
 																		{BEGIN listIcons_column}
 									<td class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>
-																		{BEGIN edit_column}
-									{BEGIN edit_link}
-									<a class="runner-button-img" {$editlink_attrs} title="Edit"><img class="runner-cicon" src="images/icon_edit_new.gif" alt="Edit"></a>
-									{END edit_link}
-									{END edit_column}
+									
+																		{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+									<a class="runner-button-img" {$inlineeditlink_attrs} title="Inline Edit"><img class="runner-cicon" src="images/icon_inline_edit_new.gif" alt="Inline Edit"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
 
 									
-									
-																		{BEGIN view_column}
-									{BEGIN view_link}
-									<a class="runner-button-img" {$viewlink_attrs} title="View"><img class="runner-cicon" src="images/icon_view_new.gif" alt="View"></a>
-									{END view_link}
-									{END view_column}
-									</td>	
+																		</td>	
 									{END listIcons_column}	
 
 																		{BEGIN checkbox_column}
@@ -493,28 +478,6 @@
 									</td>
 									{END checkbox_column}
 
-																		{BEGIN students_dtable_column}
-									<td class="runner-cc runner-nowrap" {$rowstyle}>
-									{BEGIN student_connected_batches_dtable_link}
-									<span>
-									<a {$student_connected_batches_dtablelink_attrs}>
-										Student Connected Batches
-																				<span {$student_connected_batches_childnumber_attr} dir="ltr">{BEGIN student_connected_batches_childcount}({$student_connected_batches_childnumber}){END student_connected_batches_childcount}</span>
-									</a>
-																		</br>
-									</span>
-									{END student_connected_batches_dtable_link}
-																											{BEGIN exam_result_dtable_link}
-									<span>
-									<a {$exam_result_dtablelink_attrs}>
-										Exam Result
-																				<span {$exam_result_childnumber_attr} dir="ltr">{BEGIN exam_result_childcount}({$exam_result_childnumber}){END exam_result_childcount}</span>
-									</a>
-																		</br>
-									</span>
-									{END exam_result_dtable_link}
-																		</td>
-									{END students_dtable_column}
 
 										{BEGIN Photo_fieldcolumn}
 	<td class="runner-cc  {$Photo_class}" {$Photo_style}>
@@ -522,11 +485,23 @@
 	</td>
 {END Photo_fieldcolumn}
 
-	{BEGIN FullName_fieldcolumn}
-	<td class="runner-cc runner-clast {$FullName_class}" {$FullName_style}>
-		{$FullName_value}
+	{BEGIN StudentID_fieldcolumn}
+	<td class="runner-cc  {$StudentID_class}" {$StudentID_style}>
+		{$StudentID_value}
 	</td>
-{END FullName_fieldcolumn}
+{END StudentID_fieldcolumn}
+
+	{BEGIN BatchID_fieldcolumn}
+	<td class="runner-cc  {$BatchID_class}" {$BatchID_style}>
+		{$BatchID_value}
+	</td>
+{END BatchID_fieldcolumn}
+
+	{BEGIN Fees_fieldcolumn}
+	<td class="runner-cc runner-clast {$Fees_class}" {$Fees_style}>
+		{$Fees_value}
+	</td>
+{END Fees_fieldcolumn}
 
 
 																		<td class="runner-cr" {$rowstyle}></td>
@@ -550,16 +525,19 @@
 									<td class="runner-cc"></td>
 									{END checkbox_column}
 
-																		{BEGIN students_dtable_column}
-									<td class="runner-cc"></td>
-									{END students_dtable_column}
-									
+
 									{BEGIN Photo_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END Photo_fieldheadercolumn}
-{BEGIN FullName_fieldheadercolumn}
+{BEGIN StudentID_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END StudentID_fieldheadercolumn}
+{BEGIN BatchID_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END BatchID_fieldheadercolumn}
+{BEGIN Fees_fieldheadercolumn}
 <td class="runner-cc runner-clast"></td>
-{END FullName_fieldheadercolumn}
+{END Fees_fieldheadercolumn}
 
 									<td class="runner-cr"><img src="images/spacer.gif"></td>
 									
