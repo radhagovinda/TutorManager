@@ -296,22 +296,6 @@
 {END newrecord_controls_block}
 
 
-{BEGIN record_controls_block}
-<td  class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><span>	
-	
-		{BEGIN deleteselected_link}
-		<span class="runner-btnframe" {$deleteselectedlink_span}>
-		<span class="runner-btnleft"></span>
-		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$deleteselectedlink_attrs}>Delete selected</a>
-		</span>
-	{END deleteselected_link}
-
-	
-	
-</span></td>
-{END record_controls_block}
-
 <td class="runner-cc filler"></td>
 </tr>
 </table></td>
@@ -372,21 +356,16 @@
 									<th class="runner-cc" iEditCont="all">&nbsp;</th>
 									{END listIcons_column}	
 
-																		{BEGIN checkbox_column}
-									<th class="runner-cc runner-bc">
-										<input type="checkbox" {$checkboxheader_attrs}>
-									</th>
-									{END checkbox_column}
-
-																										{BEGIN TutorialID_fieldheadercolumn}
+									
+																										{BEGIN ID_fieldheadercolumn}
 									<th class="runner-cc ">
-									{BEGIN TutorialID_fieldheader}
-																				<a {$TutorialID_orderlinkattrs}>
-											Tutorial ID
+									{BEGIN ID_fieldheader}
+																				<a {$ID_orderlinkattrs}>
+											ID
 										</a>
-									{END TutorialID_fieldheader}
+									{END ID_fieldheader}
 									</th>
-									{END TutorialID_fieldheadercolumn}
+									{END ID_fieldheadercolumn}
 
 																	{BEGIN LoginID_fieldheadercolumn}
 									<th class="runner-cc ">
@@ -496,20 +475,13 @@
 									</td>	
 									{END listIcons_column}	
 
-																		{BEGIN checkbox_column}
-									<td class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>
-									{BEGIN checkbox}
-									<input type="checkbox" {$checkbox_attrs}>
-									{END checkbox}
-									</td>
-									{END checkbox_column}
+									
 
-
-										{BEGIN TutorialID_fieldcolumn}
-	<td class="runner-cc  {$TutorialID_class}" {$TutorialID_style}>
-		{$TutorialID_value}
+										{BEGIN ID_fieldcolumn}
+	<td class="runner-cc  {$ID_class}" {$ID_style}>
+		{$ID_value}
 	</td>
-{END TutorialID_fieldcolumn}
+{END ID_fieldcolumn}
 
 	{BEGIN LoginID_fieldcolumn}
 	<td class="runner-cc  {$LoginID_class}" {$LoginID_style}>
@@ -571,14 +543,11 @@
 									<td class="runner-cc"></td>
 									{END listIcons_column}	
 									
-																		{BEGIN checkbox_column}
-									<td class="runner-cc"></td>
-									{END checkbox_column}
+									
 
-
-									{BEGIN TutorialID_fieldheadercolumn}
+									{BEGIN ID_fieldheadercolumn}
 <td class="runner-cc "></td>
-{END TutorialID_fieldheadercolumn}
+{END ID_fieldheadercolumn}
 {BEGIN LoginID_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END LoginID_fieldheadercolumn}

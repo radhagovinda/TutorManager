@@ -69,9 +69,7 @@
         <TR class="runner-row style1"><TD class=runner-cl></TD>
           <TD class=runner-cc><TABLE class=runner-hc border=0 cellPadding=0><TR>{BEGIN newrecord_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><SPAN>{BEGIN add_link}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$addlink_attrs}>Add New User</A> 
                   </SPAN>{END add_link}</SPAN></TD>
-                {END newrecord_controls_block}{BEGIN record_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><SPAN>{BEGIN deleteselected_link}<SPAN class=runner-btnframe {$deleteselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$deleteselectedlink_attrs}>Delete selected</A> 
-                  </SPAN>{END deleteselected_link}</SPAN></TD>
-                {END record_controls_block}<TD class="runner-cc filler"></TD></TR></TABLE></TD>
+                {END newrecord_controls_block}<TD class="runner-cc filler"></TD></TR></TABLE></TD>
           <TD class=runner-cr></TD></TR>
         <TR class="{$cfooterclass_recordcontrols}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
@@ -87,10 +85,12 @@
           <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_message}
       {BEGIN container_grid}{BEGIN grid_block}<TABLE class="runner-c runner-c-grid runner-b-grid" cellPadding=0><THEAD>{BEGIN grid_header}<TR class="runner-toprow style1 {$gridHeader_class}">{BEGIN record_header}<TH class=runner-cl><IMG src="images/spacer.gif"></TH>
           {BEGIN listIcons_column}<TH class=runner-cc iEditCont="all"></TH>
-          {END listIcons_column}{BEGIN checkbox_column}<TH class="runner-cc runner-bc"><INPUT type=checkbox 
-            {$checkboxheader_attrs}></TH>
-          {END checkbox_column}{BEGIN TutorialID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN TutorialID_fieldheader}<A {$TutorialID_orderlinkattrs}>Tutorial ID </A>{END TutorialID_fieldheader}</TH>
-          {END TutorialID_fieldheadercolumn}{BEGIN LoginID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN LoginID_fieldheader}<A {$LoginID_orderlinkattrs}>Login ID </A>{END LoginID_fieldheader}</TH>
+          {END listIcons_column}{BEGIN ID_fieldheadercolumn}<th class="runner-cc ">{BEGIN ID_fieldheader}<a {$ID_orderlinkattrs}>
+											ID
+										</a>
+									{END ID_fieldheader}
+									</th>
+									{END ID_fieldheadercolumn}{BEGIN LoginID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN LoginID_fieldheader}<A {$LoginID_orderlinkattrs}>Login ID </A>{END LoginID_fieldheader}</TH>
           {END LoginID_fieldheadercolumn}{BEGIN Password_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Password_fieldheader}<A {$Password_orderlinkattrs}>Password </A>{END Password_fieldheader}</TH>
           {END Password_fieldheadercolumn}{BEGIN UserName_fieldheadercolumn}<TH class="runner-cc ">{BEGIN UserName_fieldheader}<A {$UserName_orderlinkattrs}>User Name </A>{END UserName_fieldheader}</TH>
           {END UserName_fieldheadercolumn}{BEGIN EmailID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN EmailID_fieldheader}<A {$EmailID_orderlinkattrs}>Email ID </A>{END EmailID_fieldheader}</TH>
@@ -101,9 +101,9 @@
           {BEGIN endrecordheader_block}<TH class=runner-cs></TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
         {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowstyle} {$rowattrs}>{BEGIN grid_record}<TD class=runner-cl {$rowstyle}></TD>
           {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>{BEGIN edit_column}{BEGIN edit_link}<A class=runner-button-img title=Edit {$editlink_attrs}><IMG class=runner-cicon alt=Edit src="images/icon_edit_new.gif"></A> {END edit_link}{END edit_column}{BEGIN view_column}{BEGIN view_link}<A class=runner-button-img title=View {$viewlink_attrs}><IMG class=runner-cicon alt=View src="images/icon_view_new.gif"></A>{END view_link}{END view_column}</TD>
-          {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>
-          {END checkbox_column}{BEGIN TutorialID_fieldcolumn}<TD class="runner-cc  {$TutorialID_class}" {$TutorialID_style}>{$TutorialID_value}</TD>
-          {END TutorialID_fieldcolumn}{BEGIN LoginID_fieldcolumn}<TD class="runner-cc  {$LoginID_class}" {$LoginID_style}>{$LoginID_value}</TD>
+          {END listIcons_column}{BEGIN ID_fieldcolumn}<td class="runner-cc  {$ID_class}" {$ID_style}>{$ID_value}
+	</td>
+{END ID_fieldcolumn}{BEGIN LoginID_fieldcolumn}<TD class="runner-cc  {$LoginID_class}" {$LoginID_style}>{$LoginID_value}</TD>
           {END LoginID_fieldcolumn}{BEGIN Password_fieldcolumn}<TD class="runner-cc  {$Password_class}" {$Password_style}>{$Password_value}</TD>
           {END Password_fieldcolumn}{BEGIN UserName_fieldcolumn}<TD class="runner-cc  {$UserName_class}" {$UserName_style}>{$UserName_value}</TD>
           {END UserName_fieldcolumn}{BEGIN EmailID_fieldcolumn}<TD class="runner-cc  {$EmailID_class}" {$EmailID_style}>{$EmailID_value}</TD>
@@ -114,9 +114,8 @@
           {BEGIN endrecord_block}<TD class=runner-cs {$endrecordblock_attrs}></TD>{END endrecord_block}{END grid_record}</TR>
         {END grid_row}{BEGIN grid_footer}<TR class="runner-bottomrow style1{$gridFooter_class}">{BEGIN record_footer}<TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
-          {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
-          {END checkbox_column}{BEGIN TutorialID_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END TutorialID_fieldheadercolumn}{BEGIN LoginID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END listIcons_column}{BEGIN ID_fieldheadercolumn}<td class="runner-cc "></td>
+{END ID_fieldheadercolumn}{BEGIN LoginID_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END LoginID_fieldheadercolumn}{BEGIN Password_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END Password_fieldheadercolumn}{BEGIN UserName_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END UserName_fieldheadercolumn}{BEGIN EmailID_fieldheadercolumn}<TD class="runner-cc "></TD>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 04, 2014 at 11:25 AM
+-- Generation Time: Jul 05, 2014 at 03:57 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -925,6 +925,7 @@ INSERT INTO `useraccess_ugrights` (`TableName`, `GroupID`, `AccessMask`) VALUES
 ('msg_sms', 1, 'AS'),
 ('msg_sms_batch', -1, 'ASM'),
 ('msg_sms_batch', 1, 'AS'),
+('MyProfile', 1, 'ES'),
 ('options', -1, 'ESM'),
 ('options', 1, 'ES'),
 ('salutations', -1, 'AEDSM'),
@@ -933,6 +934,8 @@ INSERT INTO `useraccess_ugrights` (`TableName`, `GroupID`, `AccessMask`) VALUES
 ('sms_template', 1, 'AEDS'),
 ('students', -1, 'AEDSPM'),
 ('students', 1, 'AEDSM'),
+('StudentsDetails', -1, 'SM'),
+('StudentsDetails', 1, 'S'),
 ('students_prev_records', -1, 'SM'),
 ('students_prev_records', 1, 'S'),
 ('student_attendance', -1, 'AEDSM'),
@@ -976,7 +979,6 @@ INSERT INTO `useraccess_ugrights` (`TableName`, `GroupID`, `AccessMask`) VALUES
 ('table9', -1, 'AEDSPIM'),
 ('update_support_request', -1, 'ESM'),
 ('users', -1, 'AEDSM'),
-('users', 1, 'E'),
 ('view_support_request', -1, 'SM'),
 ('view_support_request', 1, 'S');
 
@@ -987,7 +989,7 @@ INSERT INTO `useraccess_ugrights` (`TableName`, `GroupID`, `AccessMask`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `users` (
-  `TutorialID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
   `LoginID` varchar(15) DEFAULT NULL,
   `Password` varchar(100) DEFAULT NULL,
   `UserName` varchar(50) DEFAULT NULL,
@@ -995,18 +997,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `IsActive` varchar(100) NOT NULL,
   `ActivationCode` varchar(100) NOT NULL,
   `IsAdministrator` varchar(100) NOT NULL,
-  PRIMARY KEY (`TutorialID`),
+  PRIMARY KEY (`ID`),
   UNIQUE KEY `LoginID` (`LoginID`),
   UNIQUE KEY `EmailID` (`EmailID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`TutorialID`, `LoginID`, `Password`, `UserName`, `EmailID`, `IsActive`, `ActivationCode`, `IsAdministrator`) VALUES
-(0, 'admin', 'admin', NULL, NULL, '', '', ''),
-(1, 'pradipm', '#reset1234', 'Pradip Mallick', 'mallick124@gmail.com', '', '', '');
+INSERT INTO `users` (`ID`, `LoginID`, `Password`, `UserName`, `EmailID`, `IsActive`, `ActivationCode`, `IsAdministrator`) VALUES
+(1, 'admin', 'admin', 'Administrator', NULL, '', '', ''),
+(2, 'pradipm', '#reset1234', 'Pradip Mallick', 'mallick124@gmail.com', '', '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
