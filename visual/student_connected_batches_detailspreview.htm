@@ -1,0 +1,47 @@
+
+<DIV {$pageattrs}>
+{BEGIN container_dcount}
+<TABLE class="runner-c runner-c-dcount" cellPadding=0>
+  <TBODY>
+  <TR class="{$cheaderclass_dcount}">
+    <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+    <TD class=runner-cc></TD>
+    <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+  <TR 
+  class="runner-row style1 runner-b-detailspreviewheader {$brickclass_detailspreviewheader}">
+    <TD class=runner-cl></TD>
+    <TD class="runner-cc runner-brickcontents">
+      </TD>
+    <TD class=runner-cr></TD></TR>
+  <TR 
+  class="runner-row style1 runner-b-detailspreviewdetailsfount {$brickclass_detailspreviewdetailsfount}">
+    <TD class=runner-cl></TD>
+    <TD class="runner-cc runner-brickcontents">
+      Studies in: <STRONG>{$row_count}&nbsp;batch(es).</STRONG></TD>
+    <TD class=runner-cr></TD></TR>
+  {BEGIN display_first}<TR class="runner-row style1 runner-b-detailspreviewdispfirst {$brickclass_detailspreviewdispfirst}">
+    <TD class=runner-cl></TD>
+    <TD class="runner-cc runner-brickcontents">
+      Displaying first: <STRONG>{$display_count}</STRONG>. </TD>
+    <TD class=runner-cr></TD></TR>
+  {END display_first}<TR class="{$cfooterclass_dcount}">
+    <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+    <TD class=runner-cc></TD>
+    <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_dcount}
+{BEGIN container_detailspreviewgrid}
+{BEGIN details_data}<TABLE class="runner-c runner-c-detailspreviewgrid runner-b-detailspreviewgrid">
+  <TBODY>
+  <TR class="runner-toprow style1">
+    <TH class=runner-cl><IMG src="images/spacer.gif"></TH>
+    <TH class="runner-cc runner-clast">
+      Batch Name</TH>
+    <TH class=runner-cr><IMG src="images/spacer.gif"></TH></TR>
+  {BEGIN details_row}<TR class="runner-row style1">
+    <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+    <TD class="runner-cc runner-clast">
+      {$BatchFullName_value}</TD>
+    <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+  {END details_row}<TR class="runner-bottomrow style1">
+    <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+    <TD class="runner-cc runner-clast"></TD>
+    <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END details_data}{END container_detailspreviewgrid}</DIV>

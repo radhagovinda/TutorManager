@@ -56,15 +56,6 @@
 
 
 
-{BEGIN export_link}
-<td  class="runner-cc runner-br runner-b-toplinks_export" {$brickclass_toplinks_export}><span>	<span class="runner-btnframe">
-	<span class="runner-btnleft"></span>
-	<span class="runner-btnright"></span>
-	<a target="_blank" href="students_export.php" class="runner-button" {$exportlink_attrs}>Export results</a>
-	</span>
-</span></td>
-{END export_link}
-
 
 
 </tr>
@@ -316,14 +307,7 @@
 		</span>
 	{END deleteselected_link}
 
-		{BEGIN exportselected_link}
-		<span class="runner-btnframe" {$exportselectedlink_span}>
-		<span class="runner-btnleft"></span>
-		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$exportselectedlink_attrs}>Export selected</a>
-		</span>
-	{END exportselected_link}
-
+	
 	
 </span></td>
 {END record_controls_block}
@@ -406,7 +390,7 @@
 									{END Photo_fieldheadercolumn}
 
 																	{BEGIN FullName_fieldheadercolumn}
-									<th class="runner-cc runner-clast">
+									<th class="runner-cc ">
 									{BEGIN FullName_fieldheader}
 																				<a {$FullName_orderlinkattrs}>
 											Full Name
@@ -414,6 +398,26 @@
 									{END FullName_fieldheader}
 									</th>
 									{END FullName_fieldheadercolumn}
+
+																	{BEGIN Class_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN Class_fieldheader}
+																				<a {$Class_orderlinkattrs}>
+											Class
+										</a>
+									{END Class_fieldheader}
+									</th>
+									{END Class_fieldheadercolumn}
+
+																	{BEGIN BatchName_fieldheadercolumn}
+									<th class="runner-cc runner-clast">
+									{BEGIN BatchName_fieldheader}
+																				<a {$BatchName_orderlinkattrs}>
+											Batch
+										</a>
+									{END BatchName_fieldheader}
+									</th>
+									{END BatchName_fieldheadercolumn}
 
 
 									
@@ -491,10 +495,22 @@
 {END Photo_fieldcolumn}
 
 	{BEGIN FullName_fieldcolumn}
-	<td class="runner-cc runner-clast {$FullName_class}" {$FullName_style}>
+	<td class="runner-cc  {$FullName_class}" {$FullName_style}>
 		{$FullName_value}
 	</td>
 {END FullName_fieldcolumn}
+
+	{BEGIN Class_fieldcolumn}
+	<td class="runner-cc  {$Class_class}" {$Class_style}>
+		{$Class_value}
+	</td>
+{END Class_fieldcolumn}
+
+	{BEGIN BatchName_fieldcolumn}
+	<td class="runner-cc runner-clast {$BatchName_class}" {$BatchName_style}>
+		{$BatchName_value}
+	</td>
+{END BatchName_fieldcolumn}
 
 
 																		<td class="runner-cr" {$rowstyle}></td>
@@ -526,8 +542,14 @@
 <td class="runner-cc "></td>
 {END Photo_fieldheadercolumn}
 {BEGIN FullName_fieldheadercolumn}
-<td class="runner-cc runner-clast"></td>
+<td class="runner-cc "></td>
 {END FullName_fieldheadercolumn}
+{BEGIN Class_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END Class_fieldheadercolumn}
+{BEGIN BatchName_fieldheadercolumn}
+<td class="runner-cc runner-clast"></td>
+{END BatchName_fieldheadercolumn}
 
 									<td class="runner-cr"><img src="images/spacer.gif"></td>
 									

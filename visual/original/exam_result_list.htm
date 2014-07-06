@@ -248,6 +248,15 @@
 	</span>
 </div>
   {END adminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
 </div>
 </td><td class="runner-cr"></td></tr>{END security_block}
 
@@ -443,7 +452,7 @@
 									{END ExamID_fieldheadercolumn}
 
 																	{BEGIN MarksObtained_fieldheadercolumn}
-									<th class="runner-cc ">
+									<th class="runner-cc runner-clast">
 									{BEGIN MarksObtained_fieldheader}
 																				<a {$MarksObtained_orderlinkattrs}>
 											Marks Obtained
@@ -451,16 +460,6 @@
 									{END MarksObtained_fieldheader}
 									</th>
 									{END MarksObtained_fieldheadercolumn}
-
-																	{BEGIN FullMarks_fieldheadercolumn}
-									<th class="runner-cc runner-clast">
-									{BEGIN FullMarks_fieldheader}
-																				<a {$FullMarks_orderlinkattrs}>
-											Full Marks
-										</a>
-									{END FullMarks_fieldheader}
-									</th>
-									{END FullMarks_fieldheadercolumn}
 
 
 									
@@ -517,16 +516,10 @@
 {END ExamID_fieldcolumn}
 
 	{BEGIN MarksObtained_fieldcolumn}
-	<td class="runner-cc  {$MarksObtained_class}" {$MarksObtained_style}>
+	<td class="runner-cc runner-clast {$MarksObtained_class}" {$MarksObtained_style}>
 		{$MarksObtained_value}
 	</td>
 {END MarksObtained_fieldcolumn}
-
-	{BEGIN FullMarks_fieldcolumn}
-	<td class="runner-cc runner-clast {$FullMarks_class}" {$FullMarks_style}>
-		{$FullMarks_value}
-	</td>
-{END FullMarks_fieldcolumn}
 
 
 																		<td class="runner-cr" {$rowstyle}></td>
@@ -558,11 +551,8 @@
 <td class="runner-cc "></td>
 {END ExamID_fieldheadercolumn}
 {BEGIN MarksObtained_fieldheadercolumn}
-<td class="runner-cc "></td>
-{END MarksObtained_fieldheadercolumn}
-{BEGIN FullMarks_fieldheadercolumn}
 <td class="runner-cc runner-clast"></td>
-{END FullMarks_fieldheadercolumn}
+{END MarksObtained_fieldheadercolumn}
 
 									<td class="runner-cr"><img src="images/spacer.gif"></td>
 									
