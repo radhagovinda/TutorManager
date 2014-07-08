@@ -216,6 +216,15 @@
 	</span>
 </div>
   {END adminarea_link}
+{BEGIN changepwd_link}
+<div>
+	<span class="runner-btnframe">
+	<span class="runner-btnleft"></span>
+	<span class="runner-btnright"></span>
+	<a class="runner-button" href="changepwd.php" {$changepwdlink_attrs}>Change password</a>
+	</span>
+</div>
+{END changepwd_link}
 </div>
 </td><td class="runner-cr"></td></tr>{END security_block}
 
@@ -259,46 +268,6 @@
 				
 				<td class="runner-center {$blockclass_center}">
 					
-
-{BEGIN container_recordcontrols}
-<table class="runner-c runner-c-recordcontrols" cellpadding="0" >
-<tr class="{$cheaderclass_recordcontrols}">
-<td class="runner-cl"><img src="images/spacer.gif"></td>
-<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
-</tr>
-<tr class="runner-row style1">
-<td class="runner-cl"></td>
-<td class="runner-cc">
-<table border="0" cellpadding="0" class="runner-hc">
-<tr>
-
-{BEGIN newrecord_controls_block}
-<td  class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><span>		{BEGIN add_link}
-		<span class="runner-btnframe">
-		<span class="runner-btnleft"></span>
-		<span class="runner-btnright"></span>
-		<a href="#" class="runner-button" {$addlink_attrs}>Add new</a>
-		</span>
-	{END add_link}
-
-	
-
-</span></td>
-{END newrecord_controls_block}
-
-
-<td class="runner-cc filler"></td>
-</tr>
-</table></td>
-<td class="runner-cr"></td>
-</tr>
-
-<tr class="{$cfooterclass_recordcontrols}">
-<td class="runner-cl"><img src="images/spacer.gif"></td>
-<td class="runner-cc"></td><td class="runner-cr"><img src="images/spacer.gif"></td>
-</tr>
-</table>
-{END container_recordcontrols}
 
 
 

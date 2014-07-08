@@ -434,23 +434,23 @@
 																		{BEGIN student_batch_dtable_column}
 									<th class="runner-cc">&nbsp;</th>
 									{END student_batch_dtable_column}
-																																			{BEGIN Photo_fieldheadercolumn}
+																																			{BEGIN FullName_fieldheadercolumn}
+									<th class="runner-cc ">
+									{BEGIN FullName_fieldheader}
+																				<a {$FullName_orderlinkattrs}>
+											Full Name
+										</a>
+									{END FullName_fieldheader}
+									</th>
+									{END FullName_fieldheadercolumn}
+
+																	{BEGIN Photo_fieldheadercolumn}
 									<th class="runner-cc ">
 									{BEGIN Photo_fieldheader}
 																				Photo
 									{END Photo_fieldheader}
 									</th>
 									{END Photo_fieldheadercolumn}
-
-																	{BEGIN StudentID_fieldheadercolumn}
-									<th class="runner-cc ">
-									{BEGIN StudentID_fieldheader}
-																				<a {$StudentID_orderlinkattrs}>
-											Student
-										</a>
-									{END StudentID_fieldheader}
-									</th>
-									{END StudentID_fieldheadercolumn}
 
 																	{BEGIN BatchID_fieldheadercolumn}
 									<th class="runner-cc ">
@@ -536,17 +536,17 @@
 																		</td>
 									{END student_batch_dtable_column}
 
-										{BEGIN Photo_fieldcolumn}
+										{BEGIN FullName_fieldcolumn}
+	<td class="runner-cc  {$FullName_class}" {$FullName_style}>
+		{$FullName_value}
+	</td>
+{END FullName_fieldcolumn}
+
+	{BEGIN Photo_fieldcolumn}
 	<td class="runner-cc  {$Photo_class}" {$Photo_style}>
 		{$Photo_value}
 	</td>
 {END Photo_fieldcolumn}
-
-	{BEGIN StudentID_fieldcolumn}
-	<td class="runner-cc  {$StudentID_class}" {$StudentID_style}>
-		{$StudentID_value}
-	</td>
-{END StudentID_fieldcolumn}
 
 	{BEGIN BatchID_fieldcolumn}
 	<td class="runner-cc  {$BatchID_class}" {$BatchID_style}>
@@ -586,12 +586,12 @@
 									<td class="runner-cc"></td>
 									{END student_batch_dtable_column}
 									
-									{BEGIN Photo_fieldheadercolumn}
+									{BEGIN FullName_fieldheadercolumn}
+<td class="runner-cc "></td>
+{END FullName_fieldheadercolumn}
+{BEGIN Photo_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END Photo_fieldheadercolumn}
-{BEGIN StudentID_fieldheadercolumn}
-<td class="runner-cc "></td>
-{END StudentID_fieldheadercolumn}
 {BEGIN BatchID_fieldheadercolumn}
 <td class="runner-cc "></td>
 {END BatchID_fieldheadercolumn}

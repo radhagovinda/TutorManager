@@ -84,7 +84,14 @@
           {END listIcons_column}{BEGIN checkbox_column}<TH class="runner-cc runner-bc"><INPUT type=checkbox 
             {$checkboxheader_attrs}></TH>
           {END checkbox_column}{BEGIN students_dtable_column}<TH class=runner-cc></TH>
-          {END students_dtable_column}{BEGIN Photo_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Photo_fieldheader}
+          {END students_dtable_column}{BEGIN StudentID_fieldheadercolumn}<th class="runner-cc ">{BEGIN StudentID_fieldheader}<a {$StudentID_orderlinkattrs}>
+											Student ID
+										</a>
+									{END StudentID_fieldheader}
+									</th>
+									{END StudentID_fieldheadercolumn}
+
+																	{BEGIN Photo_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Photo_fieldheader}
             Photo {END Photo_fieldheader}</TH>
           {END Photo_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TH class="runner-cc ">{BEGIN FullName_fieldheader}<A {$FullName_orderlinkattrs}>Full Name </A>{END FullName_fieldheader}</TH>
           {END FullName_fieldheadercolumn}{BEGIN Class_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Class_fieldheader}<A {$Class_orderlinkattrs}>Class </A>{END Class_fieldheader}</TH>
@@ -100,7 +107,11 @@
             </A><BR></SPAN>{END student_connected_batches_dtable_link}{BEGIN exam_result_dtable_link}<SPAN><A 
             {$exam_result_dtablelink_attrs}>Exam Result <SPAN dir=ltr {$exam_result_childnumber_attr}>{BEGIN exam_result_childcount}({$exam_result_childnumber}){END exam_result_childcount}</SPAN> 
             </A><BR></SPAN>{END exam_result_dtable_link}</TD>
-          {END students_dtable_column}{BEGIN Photo_fieldcolumn}<TD class="runner-cc  {$Photo_class}" {$Photo_style}>{$Photo_value}</TD>
+          {END students_dtable_column}{BEGIN StudentID_fieldcolumn}<td class="runner-cc  {$StudentID_class}" {$StudentID_style}>{$StudentID_value}
+	</td>
+{END StudentID_fieldcolumn}
+
+	{BEGIN Photo_fieldcolumn}<TD class="runner-cc  {$Photo_class}" {$Photo_style}>{$Photo_value}</TD>
           {END Photo_fieldcolumn}{BEGIN FullName_fieldcolumn}<TD class="runner-cc  {$FullName_class}" {$FullName_style}>{$FullName_value}</TD>
           {END FullName_fieldcolumn}{BEGIN Class_fieldcolumn}<TD class="runner-cc  {$Class_class}" {$Class_style}>{$Class_value}</TD>
           {END Class_fieldcolumn}{BEGIN BatchName_fieldcolumn}<TD class="runner-cc runner-clast {$BatchName_class}" {$BatchName_style}>{$BatchName_value}</TD>
@@ -110,7 +121,9 @@
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
           {END checkbox_column}{BEGIN students_dtable_column}<TD class=runner-cc></TD>
-          {END students_dtable_column}{BEGIN Photo_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END students_dtable_column}{BEGIN StudentID_fieldheadercolumn}<td class="runner-cc "></td>
+{END StudentID_fieldheadercolumn}
+{BEGIN Photo_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END Photo_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END FullName_fieldheadercolumn}{BEGIN Class_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END Class_fieldheadercolumn}{BEGIN BatchName_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
