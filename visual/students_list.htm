@@ -104,9 +104,13 @@
           {END checkbox_column}{BEGIN students_dtable_column}<TD class="runner-cc runner-nowrap" {$rowstyle}>{BEGIN student_connected_batches_dtable_link}<SPAN><A 
             {$student_connected_batches_dtablelink_attrs}>Connected 
             Batches <SPAN dir=ltr {$student_connected_batches_childnumber_attr}>{BEGIN student_connected_batches_childcount}({$student_connected_batches_childnumber}){END student_connected_batches_childcount}</SPAN> 
-            </A><BR></SPAN>{END student_connected_batches_dtable_link}{BEGIN exam_result_dtable_link}<SPAN><A 
-            {$exam_result_dtablelink_attrs}>Exam Result <SPAN dir=ltr {$exam_result_childnumber_attr}>{BEGIN exam_result_childcount}({$exam_result_childnumber}){END exam_result_childcount}</SPAN> 
-            </A><BR></SPAN>{END exam_result_dtable_link}</TD>
+            </A><BR></SPAN>{END student_connected_batches_dtable_link}{BEGIN examresult_dtable_link}<span><a {$examresult_dtablelink_attrs}>
+										Examresult
+																				<span {$examresult_childnumber_attr} dir="ltr">{BEGIN examresult_childcount}({$examresult_childnumber}){END examresult_childcount}</span>
+									</a>
+																		</br>
+									</span>
+									{END examresult_dtable_link}</TD>
           {END students_dtable_column}{BEGIN StudentID_fieldcolumn}<td class="runner-cc  {$StudentID_class}" {$StudentID_style}>{$StudentID_value}
 	</td>
 {END StudentID_fieldcolumn}

@@ -114,9 +114,13 @@
         {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowstyle} {$rowattrs}>{BEGIN grid_record}<TD class=runner-cl {$rowstyle}></TD>
           {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A class=runner-button-img title="Inline Edit" {$inlineeditlink_attrs}><IMG class=runner-cicon alt="Inline Edit" src="images/icon_inline_edit_new.gif"></A>{END inlineedit_link}{END inlineedit_column}</TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>
-          {END checkbox_column}{BEGIN exams_dtable_column}<TD class="runner-cc runner-nowrap" {$rowstyle}>{BEGIN exam_result_dtable_link}<SPAN><A 
-            {$exam_result_dtablelink_attrs}>Exam Result <SPAN dir=ltr {$exam_result_childnumber_attr}>{BEGIN exam_result_childcount}({$exam_result_childnumber}){END exam_result_childcount}</SPAN> </A>&nbsp; 
-            </SPAN>{END exam_result_dtable_link}</TD>
+          {END checkbox_column}{BEGIN exams_dtable_column}<TD class="runner-cc runner-nowrap" {$rowstyle}>{BEGIN examresult_dtable_link}<span><a {$examresult_dtablelink_attrs}>
+										Examresult
+																				<span {$examresult_childnumber_attr} dir="ltr">{BEGIN examresult_childcount}({$examresult_childnumber}){END examresult_childcount}</span>
+									</a>
+																		&nbsp;
+									</span>
+									{END examresult_dtable_link}</TD>
           {END exams_dtable_column}{BEGIN ExamName_fieldcolumn}<TD class="runner-cc  {$ExamName_class}" {$ExamName_style}>{$ExamName_value}</TD>
           {END ExamName_fieldcolumn}{BEGIN SubjectID_fieldcolumn}<TD class="runner-cc  {$SubjectID_class}" {$SubjectID_style}>{$SubjectID_value}</TD>
           {END SubjectID_fieldcolumn}{BEGIN ForClass_fieldcolumn}<TD class="runner-cc  {$ForClass_class}" {$ForClass_style}>{$ForClass_value}</TD>
