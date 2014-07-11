@@ -74950,7 +74950,7 @@ exit();
 				<v>-1</v>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>0</m_bHighlightSearchResults>
-			<m_nPartialBuildState>0</m_nPartialBuildState>
+			<m_nPartialBuildState>1</m_nPartialBuildState>
 			<query>
 				<m_sql>SELECT
 0 AS BatchID</m_sql>
@@ -75499,7 +75499,7 @@ exit();
 				<v>-1</v>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>0</m_bHighlightSearchResults>
-			<m_nPartialBuildState>0</m_nPartialBuildState>
+			<m_nPartialBuildState>1</m_nPartialBuildState>
 			<query>
 				<m_sql>SELECT
 0 AS ExamID</m_sql>
@@ -89963,7 +89963,7 @@ ExamDate</m_strFieldList>
 					<m_isRunTime>0</m_isRunTime>
 					<m_strPage>Add page</m_strPage>
 					<m_strName>EVENT_BEFOREPROCESS_ADD</m_strName>
-					<m_strEventCode> global $dal;
+					<m_strEventCode>global $dal;
 global $conn;
 
 
@@ -89998,13 +89998,13 @@ while ($datatmp = db_fetch_array($rstmp)) {
 
 	$MessageRaw = "Dear &lt;StudentNameVariable&gt;, you obtained &lt;marksObtainedVariable&gt; out of &lt;totalmarksVariable&gt; in the &lt;SubjectVariable&gt;  mock test held on &lt;dateVariable&gt;. Highest Mark: &lt;highestMarksVariable&gt;. - Pradip Sir";
 
-	$MessageRaw = str_replace("&lt;StudentNameVariable&gt;", $FullName, $MessageRaw);
-	$MessageRaw = str_replace("&lt;marksObtainedVariable&gt;", $MarksObtained, $MessageRaw);
-	$MessageRaw = str_replace("&lt;totalmarksVariable&gt;", $FullMarks, $MessageRaw);
-	$MessageRaw = str_replace("&lt;totalmarksVariable&gt;", $FullMarks, $MessageRaw);
-	$MessageRaw = str_replace("&lt;SubjectVariable&gt;", $Subject, $MessageRaw);
-	$MessageRaw = str_replace("&lt;dateVariable&gt;", $ExamDate, $MessageRaw);
-	$MessageRaw = str_replace("&lt;highestMarksVariable&gt;", $MaxMarks, $MessageRaw);
+	$MessageRawA = str_replace("&lt;StudentNameVariable&gt;", $FullName, $MessageRaw);
+	$MessageRawB = str_replace("&lt;marksObtainedVariable&gt;", $MarksObtained, $MessageRawA);
+	$MessageRawC = str_replace("&lt;totalmarksVariable&gt;", $FullMarks, $MessageRawB);
+	$MessageRawD = str_replace("&lt;totalmarksVariable&gt;", $FullMarks, $MessageRawC);
+	$MessageRawE = str_replace("&lt;SubjectVariable&gt;", $Subject, $MessageRawD);
+	$MessageRawF = str_replace("&lt;dateVariable&gt;", $ExamDate, $MessageRawE);
+	$MessageRawG = str_replace("&lt;highestMarksVariable&gt;", $MaxMarks, $MessageRawF);
 
 	//====================== START SMS Sending==================
 							$senderId = $_SESSION['SMSSenderId'];
@@ -90013,7 +90013,7 @@ while ($datatmp = db_fetch_array($rstmp)) {
 							//Your message to send, Add URL endcoding here.
 							// init the resource
 							$url = 'http://203.212.70.200/smpp/sendsms';
-							$myvars = 'username=' . $username . '&amp;password=' . $password. '&amp;to=' . $MobileNumbers . '&amp;from=' . $senderId . '&amp;udh=' . '&amp;text=' . $MessageRaw . '&amp;dlr-mask=19&amp;dlr-url&amp;category=bulk' ;
+							$myvars = 'username=' . $username . '&amp;password=' . $password. '&amp;to=' . $MobileNumbers . '&amp;from=' . $senderId . '&amp;udh=' . '&amp;text=' . $MessageRawG . '&amp;dlr-mask=19&amp;dlr-url&amp;category=bulk' ;
 						
 							$ch = curl_init( $url );
 							curl_setopt( $ch, CURLOPT_POST, 1);
@@ -90025,12 +90025,30 @@ while ($datatmp = db_fetch_array($rstmp)) {
 							$response = curl_exec( $ch );
 
 							curl_close($ch);
-							
-							//echo $myvars."&lt;br&gt;".$response;
+							echo $response;
+							// Nullyfying table variable values
+							$FullName = '';
+							$ExamName = '';
+							$MarksObtained = '';
+							$MobileNumbers = '';
+							$FullMarks = '';
+							$ExamDate = '';
+							$Subject = '';
 							
 	//====================== END SMS Sending==================
 
 }
+	// Nullyfying message variable values
+	$MaxMarks ='';
+	$MessageRaw ='';
+	$MessageRawA ='';
+	$MessageRawB = '';
+	$MessageRawC = '';
+	$MessageRawD = '';
+	$MessageRawE = '';
+	$MessageRawF = '';
+	$MessageRawG = '';
+
 echo "Marks sent to all the students and their guardians&lt;br&gt;";
 echo "&lt;p&gt;&lt;a href='javascript:window.close();'&gt;Close window&lt;/a&gt;&lt;/p&gt;";
 	//=======================================================================
@@ -90047,10 +90065,7 @@ $sqlGetDetails = $_SESSION["SQLforGetDetails"] ;
     $sqlGetDetails.= ")";
 $_SESSION["sqlGetDetailsFull"] = $sqlGetDetails;
 }
-// ============================================================
-
-
-</m_strEventCode>
+// ============================================================</m_strEventCode>
 					<m_strEventID>EVENT_BEFOREPROCESS_ADD</m_strEventID>
 					<sub />
 					<m_caption>
@@ -90833,7 +90848,7 @@ Message,
 				<v>-1</v>
 			</m_arrGroupsPerPage>
 			<m_bHighlightSearchResults>0</m_bHighlightSearchResults>
-			<m_nPartialBuildState>0</m_nPartialBuildState>
+			<m_nPartialBuildState>1</m_nPartialBuildState>
 			<query>
 				<m_sql>SELECT SMSID, 
 MobileNumbers, 
@@ -96465,7 +96480,7 @@ return true;</m_strEventCode>
 					<dbkey>GroupID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>90242252</pbclean>
+				<pbclean>1613432</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -96502,7 +96517,7 @@ return true;</m_strEventCode>
 					<dbkey>GroupID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>90242252</pbclean>
+				<pbclean>1613432</pbclean>
 			</v>
 		</dbtables>
 		<m_strCacheConnString>mysql;localhost;orgain_admin;tamal1972;;orgain_tmanagerpmallick;;1</m_strCacheConnString>
@@ -100472,7 +100487,7 @@ return true;</m_strEventCode>
 			</v>
 			<v>
 				<filename>C:\wamp\www\tutormanager\styles\ExtravaganzaBlueWave</filename>
-				<source></source>
+				<source />
 			</v>
 			<v>
 				<filename>C:\wamp\www\tutormanager\subjects_edit.php</filename>
