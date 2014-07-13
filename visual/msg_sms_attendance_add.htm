@@ -3,7 +3,7 @@
 <META content=IE=7 http-equiv=X-UA-Compatible>
 <META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
 <META name=GENERATOR content="MSHTML 11.00.9600.17126"></HEAD>
-<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}&nbsp; 
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}&nbsp;
 <TABLE class=runner-toptable cellPadding=0>
   <TBODY>
   <TR class=runner-header>
@@ -15,13 +15,14 @@
           <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc>
             
-            <DIV 
-            class="runner-b-addheader {$brickclass_addheader}">&nbsp;</DIV></TD>
+            <DIV class="runner-b-addheader {$brickclass_addheader}">Msg Sms 
+            Attendance, Add new record</DIV></TD>
           <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
         {BEGIN message_block}<TR class="runner-row style1 runner-b-message {$brickclass_message}">
           <TD class=runner-cl></TD>
           <TD class="runner-cc runner-brickcontents">
-            </TD>
+            
+            <DIV class=runner-message>{$message}</DIV></TD>
           <TD class=runner-cr></TD></TR>
         {END message_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}">
           <TD class=runner-cl></TD>
@@ -38,16 +39,16 @@
               {BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}">
                 <TD class=runner-cl></TD>
                 <TD class="runner-cc runner-brickcontents" colSpan=2>
-                  <SPAN id=required_block{$id}><STRONG><FONT 
-                  color=#ff0000>Please confirm sending exam marks 
-                  SMS</FONT></STRONG></SPAN></TD>
+                  <SPAN id=required_block{$id}><FONT 
+                  color=#ff0000><STRONG>Please confirm sending attendance 
+                  SMS</STRONG></FONT></SPAN></TD>
                 <TD class=runner-cr></TD></TR>
               {END legend}<TR 
               class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}">
                 <TD class=runner-cl></TD>
                 <TD class="runner-cc runner-brickcontents" colSpan=2>
-                  {BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Send Marks 
-                  SMS Now...</A> </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> </SPAN>{END cancel_button}</TD>
+                  {BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Send 
+                  Attendance SMS...</A> </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> </SPAN>{END cancel_button}</TD>
                 <TD class=runner-cr></TD></TR>
               <TR class="{$cfooterclass_fields}">
                 <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
@@ -65,4 +66,5 @@
     <TD class="runner-right {$blockclass_right}"></TD></TR>
   <TR class=runner-footer>
     <TD class=runner-bottom 
-colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{END body}</BODY></HTML>
+colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{END body} 
+</BODY></HTML>

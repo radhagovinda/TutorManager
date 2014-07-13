@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 11.00.9600.17126"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable borderColor=#ce0a00 cellSpacing=2 cellPadding=0 
+bgColor=#ffffff border=0>
+  <TBODY>
+  <TR class=runner-header>
+    <TD class=runner-top colSpan=3>
+      {BEGIN container_add}
+      <TABLE class="runner-c runner-c-add" borderColor=#ce0a00 cellPadding=0 
+      align=center bgColor=#b0de00>
+        <TBODY>
+        <TR class="runner-toprow style2 header" style="HEIGHT: 16px">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc>
+            
+            <DIV class="runner-b-addheader {$brickclass_addheader}">Attendance 
+            Select Batch, Add new record</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN message_block}<TR class="runner-row style1 runner-b-message {$brickclass_message}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents">
+            
+            <DIV class=runner-message>{$message}</DIV></TD>
+          <TD class=runner-cr></TD></TR>
+        {END message_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper">
+            
+            {BEGIN container_fields}
+            <TABLE class="runner-c runner-c-fields" cellPadding=0>
+              <TBODY>
+              <TR class="{$cheaderclass_fields}">
+                <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class="runner-cc alt"></TD>
+                <TD class="runner-cr alt"><IMG src="images/spacer.gif"></TD></TR>
+              {BEGIN BatchID_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_BatchID {$fielddispclass_BatchID}">{BEGIN BatchID_label}Batch {END BatchID_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_BatchID {$fielddispclass_BatchID}">{$BatchID_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END BatchID_fieldblock}{BEGIN AttendanceDate_fieldblock}<TR class="runner-row style1 runner-b-addfields">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1">
+                  
+                  <DIV class="fieldlabel_AttendanceDate {$fielddispclass_AttendanceDate}">{BEGIN AttendanceDate_label}Attendance Date {END AttendanceDate_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell">
+                  
+                  <DIV 
+                  class="fieldcontrol_AttendanceDate {$fielddispclass_AttendanceDate}">{$AttendanceDate_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END AttendanceDate_fieldblock}{BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>
+                  <SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></TD>
+                <TD class=runner-cr></TD></TR>
+              {END legend}<TR 
+              class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}">
+                <TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>
+                  <SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=___Back class=runner-button href="#" typeid="ib">&lt;&lt;&nbsp;Back</A></SPAN>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Take 
+                  Attendance</A> </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> </SPAN>{END cancel_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to 
+                  list</A> </SPAN>{END back_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back to menu</A> </SPAN>{END backToMenu_button}</TD>
+                <TD class=runner-cr></TD></TR>
+              <TR class="{$cfooterclass_fields}">
+                <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_add}">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_add}
+      <TABLE style="WIDTH: 30%" borderColor= cellSpacing=1 cellPadding=1 
+      rules=all width="30%" align=center bgColor= border=1>
+        <TBODY>
+        <TR>
+          <TD 
+          style="WIDTH: 339px; BACKGROUND-IMAGE: none; WHITE-SPACE: normal; BACKGROUND-COLOR: #ffd700"><STRONG><FONT 
+            size=3>&nbsp;** Note:</FONT></STRONG></FONT> </FONT><EM><FONT 
+            size=1>If you proceed to take attendance for the selected Batch and 
+            Date,&nbsp; the system will immidiately add attendance records of 
+            the students with default&nbsp;'Abscent'&nbsp;value. You've to tick 
+            mark respective students and press&nbsp; "Confirm Attendance" 
+            button.</FONT></EM>
+            <P></P>
+            <P><EM><FONT size=1><FONT size=3><STRONG>Even</STRONG></FONT> after 
+            going to next page, if you don't want to take attendance now, then 
+            you must press "Discard this attendance sheet" button to cancel the 
+            records shown on the sheet. Otherwise you won't be able to take 
+            attendance of the certain Batch and 
+        Date</FONT></EM></P></TD></TR></TBODY></TABLE></TD></TR>
+  <TR class=runner-body>
+    <TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer>
+    <TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{$footer}{END body} </BODY></HTML>
