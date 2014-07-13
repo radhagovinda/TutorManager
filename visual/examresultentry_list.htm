@@ -122,10 +122,8 @@
               <TR>
                 {BEGIN record_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}>
                   <SPAN>{BEGIN editselected_link}<SPAN class=runner-btnframe {$editselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$editselectedlink_attrs}>Edit 
-                  selected</A> </SPAN>{END editselected_link}{BEGIN saveall_link}<SPAN class=runner-btnframe {$savealllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savealllink_attrs}>Save 
-                  all</A> </SPAN>{END saveall_link}{BEGIN cancelall_link}<SPAN class=runner-btnframe {$cancelalllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelalllink_attrs}>Cancel</A> </SPAN>{END cancelall_link}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send SMS 
-                  Alert to Abscent Students' Guardians</A> 
-                </SPAN></SPAN></TD>
+                  selected</A> </SPAN>{END editselected_link}{BEGIN saveall_link}<SPAN class=runner-btnframe {$savealllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savealllink_attrs}>Update 
+                  Marks</A> </SPAN>{END saveall_link}{BEGIN cancelall_link}<SPAN class=runner-btnframe {$cancelalllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelalllink_attrs}>Cancel</A> </SPAN>{END cancelall_link}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=Discard_this_Marks_Sheet class=runner-button href="#" typeid="ib">Discard&nbsp;this&nbsp;Marks&nbsp;Sheet</A></SPAN></SPAN></TD>
                 {END record_controls_block}<TD class="runner-cc filler">
                   </TD></TR></TBODY></TABLE></TD>
           <TD class=runner-cr></TD></TR>
@@ -163,13 +161,13 @@
           {END listIcons_column}{BEGIN checkbox_column}<TH class="runner-cc runner-bc">
             <INPUT type=checkbox 
             {$checkboxheader_attrs}></TH>
-          {END checkbox_column}{BEGIN BatchName_fieldheadercolumn}<TH class="runner-cc ">
-            {BEGIN BatchName_fieldheader}<A {$BatchName_orderlinkattrs}>Batch Name </A>{END BatchName_fieldheader}</TH>
-          {END BatchName_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TH class="runner-cc ">
-            {BEGIN FullName_fieldheader}<A {$FullName_orderlinkattrs}>Full Name </A>{END FullName_fieldheader}</TH>
-          {END FullName_fieldheadercolumn}{BEGIN Date_fieldheadercolumn}<TH class="runner-cc ">
-            {BEGIN Date_fieldheader}<A {$Date_orderlinkattrs}>Date </A>{END Date_fieldheader}</TH>
-          {END Date_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<TH class="runner-cc runner-clast">
+          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TH class="runner-cc ">
+            {BEGIN StudentID_fieldheader}<A {$StudentID_orderlinkattrs}>Student </A>{END StudentID_fieldheader}</TH>
+          {END StudentID_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TH class="runner-cc ">
+            {BEGIN ExamID_fieldheader}<A {$ExamID_orderlinkattrs}>Exam </A>{END ExamID_fieldheader}</TH>
+          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TH class="runner-cc ">
+            {BEGIN MarksObtained_fieldheader}<A {$MarksObtained_orderlinkattrs}>Marks Obtained </A>{END MarksObtained_fieldheader}</TH>
+          {END MarksObtained_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<TH class="runner-cc runner-clast">
             {BEGIN IsPresent_fieldheader}<A {$IsPresent_orderlinkattrs}>Is Present </A>{END IsPresent_fieldheader}</TH>
           {END IsPresent_fieldheadercolumn}<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
           {BEGIN endrecordheader_block}<TH class=runner-cs></TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
@@ -180,13 +178,12 @@
             {BEGIN inlineedit_link}<A title="Inline Edit" class=runner-button-img {$inlineeditlink_attrs}><IMG class=runner-cicon alt="Inline Edit" src="images/icon_inline_edit_new.gif"></A>{END inlineedit_link}{END inlineedit_column}</TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>
             {BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>
-          {END checkbox_column}{BEGIN BatchName_fieldcolumn}<TD class="runner-cc  {$BatchName_class}" {$BatchName_style}>
-            {$BatchName_value}</TD>
-          {END BatchName_fieldcolumn}{BEGIN FullName_fieldcolumn}<TD class="runner-cc  {$FullName_class}" {$FullName_style}>
-            {$FullName_value}</TD>
-          {END FullName_fieldcolumn}{BEGIN Date_fieldcolumn}<TD class="runner-cc  {$Date_class}" {$Date_style}>
-            {$Date_value}</TD>
-          {END Date_fieldcolumn}{BEGIN IsPresent_fieldcolumn}<TD class="runner-cc runner-clast {$IsPresent_class}" {$IsPresent_style}>
+          {END checkbox_column}{BEGIN StudentID_fieldcolumn}<TD class="runner-cc  {$StudentID_class}" {$StudentID_style}>
+            {$StudentID_value}</TD>
+          {END StudentID_fieldcolumn}{BEGIN ExamID_fieldcolumn}<TD class="runner-cc  {$ExamID_class}" {$ExamID_style}>{$ExamID_value}</TD>
+          {END ExamID_fieldcolumn}{BEGIN MarksObtained_fieldcolumn}<TD class="runner-cc  {$MarksObtained_class}" {$MarksObtained_style}>
+            {$MarksObtained_value}</TD>
+          {END MarksObtained_fieldcolumn}{BEGIN IsPresent_fieldcolumn}<TD class="runner-cc runner-clast {$IsPresent_class}" {$IsPresent_style}>
             {$IsPresent_value}</TD>
           {END IsPresent_fieldcolumn}<TD class=runner-cr {$rowstyle}></TD>
           {BEGIN endrecord_block}<TD class=runner-cs {$endrecordblock_attrs}>
@@ -195,10 +192,10 @@
           <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
-          {END checkbox_column}{BEGIN BatchName_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END BatchName_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END FullName_fieldheadercolumn}{BEGIN Date_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END Date_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
+          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END StudentID_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END MarksObtained_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
           {END IsPresent_fieldheadercolumn}<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
           {BEGIN endrecordfooter_block}<TD class=runner-cs></TD>{END endrecordfooter_block}{END record_footer}</TR>{END grid_footer}</TBODY></TABLE>{END grid_block}{END container_grid}
       {BEGIN container_pagination}

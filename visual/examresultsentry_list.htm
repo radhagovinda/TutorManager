@@ -10,8 +10,7 @@
         <TR class="runner-row style1"><TD class=runner-cl></TD>
           <TD class=runner-cc><TABLE class=runner-hc cellPadding=0 border=0><TR><TD class="runner-cc filler"></TD>
                 {BEGIN asearch_link}<TD class="runner-cc runner-br runner-b-toplinks_advsearch" {$brickclass_toplinks_advsearch}><SPAN><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$advsearchlink_attrs}>Advanced 
-                  search</A> </SPAN></SPAN></TD>
-                {END asearch_link}</TR></TABLE></TD>
+                  search</A> </SPAN></SPAN></TD>{END asearch_link}</TR></TABLE></TD>
           <TD class=runner-cr></TD></TR>
         <TR class="{$cfooterclass_toplinks}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
@@ -25,7 +24,7 @@
                 {END searchform_block}{BEGIN searchformbuttons_block}<TD class="runner-cc runner-bl runner-b-search_buttons" {$brickclass_search_buttons}><SPAN>{BEGIN searchPanelTopButtons}<SPAN>&nbsp; <SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=showSrchWin{$id} class=runner-button-img href="#" {$showHideSearchWin_attrs}><IMG src="images/search/showWindowPin.gif"></A> </SPAN>&nbsp; <SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=showOptPanel{$id} class=runner-button-img href="#" {$showHideSearchPanel_attrs}><IMG src="images/search/showOptions.gif"></A> </SPAN></SPAN>{END searchPanelTopButtons}</SPAN></TD>
                 {END searchformbuttons_block}<TD class="runner-cc filler"></TD>
                 {BEGIN details_block}<TD class="runner-cc runner-br runner-b-details_found" {$brickclass_details_found}><SPAN><SPAN 
-                  {$details_attrs}>Total Student: <B><SPAN 
+                  {$details_attrs}>Details found: <B><SPAN 
                   class=runner-details_found_count>{$records_found}</SPAN></B> 
                   </SPAN></SPAN></TD>
                 {END details_block}{BEGIN pages_block}<TD class="runner-cc runner-br runner-b-page_of" {$brickclass_page_of}><SPAN><SPAN 
@@ -40,7 +39,7 @@
           <TD class=runner-cc></TD>
           <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
         {BEGIN security_block}<TR class="runner-row style1 runner-b-loggedas {$brickclass_loggedas}"><TD class=runner-cl></TD>
-          <TD class="runner-cc runner-brickcontents"><DIV id=login_block{$id}>{BEGIN loggedas_message}<SPAN>Logged on as&nbsp;<B>{$username}</B><BR><BR></SPAN>{END loggedas_message}{BEGIN guestloginbutton}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$guestloginlink_attrs}>Login</A> </SPAN>{END guestloginbutton}{BEGIN logoutbutton}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="login.php?a=logout" {$logoutlink_attrs}>Log out</A> </SPAN>
+          <TD class="runner-cc runner-brickcontents"><DIV id=login_block{$id}>{BEGIN loggedas_message}<SPAN>Logged on as&nbsp;<B>{$username}</B><BR><BR></SPAN>{END loggedas_message}{BEGIN guestloginbutton}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$guestloginlink_attrs}>Login</A> </SPAN>{END guestloginbutton}{BEGIN logoutbutton}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="login.php?a=logout" {$logoutlink_attrs}>Log out</A> </SPAN><!-- Permissions -->
             {END logoutbutton}{BEGIN adminarea_link}<DIV><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="admin_rights_list.php" {$adminarealink_attrs}>Admin Area</A> </SPAN></DIV>
             {END adminarea_link}{BEGIN changepwd_link}<DIV><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="changepwd.php" {$changepwdlink_attrs}>Change password</A> 
           </SPAN></DIV>{END changepwd_link}</DIV></TD>
@@ -61,11 +60,12 @@
           <TD class=runner-cc></TD>
           <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
         <TR class="runner-row style1"><TD class=runner-cl></TD>
-          <TD class=runner-cc><TABLE class=runner-hc cellPadding=0 border=0><TR>{BEGIN newrecord_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrols_new" {$brickclass_recordcontrols_new}><SPAN>{BEGIN add_link}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$addlink_attrs}>Add New 
-                  Student</A> </SPAN>{END add_link}</SPAN></TD>
-                {END newrecord_controls_block}{BEGIN record_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><SPAN>{BEGIN deleteselected_link}<SPAN class=runner-btnframe {$deleteselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$deleteselectedlink_attrs}>Delete selected</A> </SPAN>{END deleteselected_link}</SPAN></TD>
-                {END record_controls_block}<TD class="runner-cc filler"><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send SMS to 
-                  Selected Students</A> </SPAN></TD></TR></TABLE></TD>
+          <TD class=runner-cc><TABLE class=runner-hc cellPadding=0 border=0><TR>{BEGIN record_controls_block}<TD class="runner-cc runner-bl runner-b-recordcontrol" {$brickclass_recordcontrol}><SPAN>{BEGIN editselected_link}<SPAN class=runner-btnframe {$editselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$editselectedlink_attrs}>Edit 
+                  selected</A> </SPAN>{END editselected_link}{BEGIN saveall_link}<SPAN class=runner-btnframe {$savealllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savealllink_attrs}>Save 
+                  all</A> </SPAN>{END saveall_link}{BEGIN cancelall_link}<SPAN class=runner-btnframe {$cancelalllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelalllink_attrs}>Cancel</A> </SPAN>{END cancelall_link}</SPAN></TD>
+                {END record_controls_block}<TD class="runner-cc filler"><SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send Marks 
+                  SMS to Selected Students</A> 
+                  </SPAN></TD></TR></TABLE></TD>
           <TD class=runner-cr></TD></TR>
         <TR class="{$cfooterclass_recordcontrols}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
@@ -83,42 +83,43 @@
           {BEGIN listIcons_column}<TH class=runner-cc iEditCont="all"></TH>
           {END listIcons_column}{BEGIN checkbox_column}<TH class="runner-cc runner-bc"><INPUT type=checkbox 
             {$checkboxheader_attrs}></TH>
-          {END checkbox_column}{BEGIN students_dtable_column}<TH class=runner-cc></TH>
-          {END students_dtable_column}{BEGIN Photo_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Photo_fieldheader}
-            Photo {END Photo_fieldheader}</TH>
-          {END Photo_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TH class="runner-cc ">{BEGIN FullName_fieldheader}<A {$FullName_orderlinkattrs}>Full Name </A>{END FullName_fieldheader}</TH>
-          {END FullName_fieldheadercolumn}{BEGIN Class_fieldheadercolumn}<TH class="runner-cc ">{BEGIN Class_fieldheader}<A {$Class_orderlinkattrs}>Class </A>{END Class_fieldheader}</TH>
-          {END Class_fieldheadercolumn}{BEGIN BatchName_fieldheadercolumn}<TH class="runner-cc runner-clast">{BEGIN BatchName_fieldheader}<A {$BatchName_orderlinkattrs}>Batch </A>{END BatchName_fieldheader}</TH>
-          {END BatchName_fieldheadercolumn}<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
+          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN StudentID_fieldheader}<A {$StudentID_orderlinkattrs}>Student </A>{END StudentID_fieldheader}</TH>
+          {END StudentID_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TH class="runner-cc ">{BEGIN ExamID_fieldheader}<A {$ExamID_orderlinkattrs}>Exam </A>{END ExamID_fieldheader}</TH>
+          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<th class="runner-cc ">{BEGIN MarksObtained_fieldheader}<A {$MarksObtained_orderlinkattrs}>Marks Obtained </A>{END MarksObtained_fieldheader}</th>
+          {END MarksObtained_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<th class="runner-cc runner-clast">{BEGIN IsPresent_fieldheader}<a {$IsPresent_orderlinkattrs}>
+											Is Present
+										</a>
+									{END IsPresent_fieldheader}
+									</th>
+									{END IsPresent_fieldheadercolumn}
+
+
+									
+									<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
           {BEGIN endrecordheader_block}<TH class=runner-cs></TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
         {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowstyle} {$rowattrs}>{BEGIN grid_record}<TD class=runner-cl {$rowstyle}></TD>
-          {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>{BEGIN edit_column}{BEGIN edit_link}<A title=Edit class=runner-button-img {$editlink_attrs}><IMG class=runner-cicon alt=Edit src="images/icon_edit_new.gif"></A> {END edit_link}{END edit_column}{BEGIN view_column}{BEGIN view_link}<A title=View class=runner-button-img {$viewlink_attrs}><IMG class=runner-cicon alt=View src="images/icon_view_new.gif"></A>{END view_link}{END view_column}</TD>
+          {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>{BEGIN inlineedit_column}{BEGIN inlineedit_link}<A title="Inline Edit" class=runner-button-img {$inlineeditlink_attrs}><IMG class=runner-cicon alt="Inline Edit" src="images/icon_inline_edit_new.gif"></A>{END inlineedit_link}{END inlineedit_column}</TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>{BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>
-          {END checkbox_column}{BEGIN students_dtable_column}<TD class="runner-cc runner-nowrap" {$rowstyle}>{BEGIN student_connected_batches_dtable_link}<SPAN><A 
-            {$student_connected_batches_dtablelink_attrs}>Connected 
-            Batches <SPAN dir=ltr {$student_connected_batches_childnumber_attr}>{BEGIN student_connected_batches_childcount}({$student_connected_batches_childnumber}){END student_connected_batches_childcount}</SPAN> 
-            </A><BR></SPAN>{END student_connected_batches_dtable_link}{BEGIN examresult_dtable_link}<span><a {$examresult_dtablelink_attrs}>
-										Examresult
-																				<span {$examresult_childnumber_attr} dir="ltr">{BEGIN examresult_childcount}({$examresult_childnumber}){END examresult_childcount}</span>
-									</a>
-																		</br>
-									</span>
-									{END examresult_dtable_link}</TD>
-          {END students_dtable_column}{BEGIN Photo_fieldcolumn}<TD class="runner-cc  {$Photo_class}" {$Photo_style}>{$Photo_value}</TD>
-          {END Photo_fieldcolumn}{BEGIN FullName_fieldcolumn}<TD class="runner-cc  {$FullName_class}" {$FullName_style}>{$FullName_value}</TD>
-          {END FullName_fieldcolumn}{BEGIN Class_fieldcolumn}<TD class="runner-cc  {$Class_class}" {$Class_style}>{$Class_value}</TD>
-          {END Class_fieldcolumn}{BEGIN BatchName_fieldcolumn}<TD class="runner-cc runner-clast {$BatchName_class}" {$BatchName_style}>{$BatchName_value}</TD>
-          {END BatchName_fieldcolumn}<TD class=runner-cr {$rowstyle}></TD>
+          {END checkbox_column}{BEGIN StudentID_fieldcolumn}<TD class="runner-cc  {$StudentID_class}" {$StudentID_style}>{$StudentID_value}</TD>
+          {END StudentID_fieldcolumn}{BEGIN ExamID_fieldcolumn}<TD class="runner-cc  {$ExamID_class}" {$ExamID_style}>{$ExamID_value}</TD>
+          {END ExamID_fieldcolumn}{BEGIN MarksObtained_fieldcolumn}<td class="runner-cc  {$MarksObtained_class}" {$MarksObtained_style}>{$MarksObtained_value}</td>
+          {END MarksObtained_fieldcolumn}{BEGIN IsPresent_fieldcolumn}<td class="runner-cc runner-clast {$IsPresent_class}" {$IsPresent_style}>{$IsPresent_value}
+	</td>
+{END IsPresent_fieldcolumn}
+
+
+																		<TD class=runner-cr {$rowstyle}></TD>
           {BEGIN endrecord_block}<TD class=runner-cs {$endrecordblock_attrs}></TD>{END endrecord_block}{END grid_record}</TR>
         {END grid_row}{BEGIN grid_footer}<TR class="runner-bottomrow style1{$gridFooter_class}">{BEGIN record_footer}<TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
-          {END checkbox_column}{BEGIN students_dtable_column}<TD class=runner-cc></TD>
-          {END students_dtable_column}{BEGIN Photo_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END Photo_fieldheadercolumn}{BEGIN FullName_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END FullName_fieldheadercolumn}{BEGIN Class_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END Class_fieldheadercolumn}{BEGIN BatchName_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
-          {END BatchName_fieldheadercolumn}<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
+          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END StudentID_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<td class="runner-cc "></td>
+          {END MarksObtained_fieldheadercolumn}{BEGIN IsPresent_fieldheadercolumn}<td class="runner-cc runner-clast"></td>
+{END IsPresent_fieldheadercolumn}
+
+									<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
           {BEGIN endrecordfooter_block}<TD class=runner-cs></TD>{END endrecordfooter_block}{END record_footer}</TR>{END grid_footer}</TABLE>{END grid_block}{END container_grid}
       {BEGIN container_pagination}<TABLE class="runner-c runner-c-pagination" cellPadding=0><TR class="{$cheaderclass_pagination}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
@@ -130,4 +131,5 @@
           <TD class=runner-cc></TD>
           <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_pagination}</TD>
     <TD class="runner-right {$blockclass_right}"></TD></TR>
-  <TR class=runner-footer><TD class=runner-bottom colSpan=3></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>
+  <TR class=runner-footer><TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>

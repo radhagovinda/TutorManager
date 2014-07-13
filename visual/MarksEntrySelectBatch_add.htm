@@ -56,9 +56,8 @@
               class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}">
                 <TD class=runner-cl></TD>
                 <TD class="runner-cc runner-brickcontents" colSpan=2>
-                  {BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Next >></A> 
-                  </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> 
-                  </SPAN>{END cancel_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back 
+                  {BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Next 
+                  &gt;&gt;</A> </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> </SPAN>{END cancel_button}{BEGIN backToMenu_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backToMenubutton_attrs}>Back 
                   to menu</A> </SPAN>{END backToMenu_button}</TD>
                 <TD class=runner-cr></TD></TR>
               <TR class="{$cfooterclass_fields}">
@@ -70,7 +69,28 @@
         <TR class="{$cfooterclass_add}">
           <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           <TD class=runner-cc></TD>
-          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_add}</TD></TR>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_add}
+      <TABLE style="WIDTH: 336px" borderColor=#ce0a00 cellPadding=1 rules=all 
+      width="30%" align=center bgColor=#b0de01>
+        <TBODY>
+        <TR>
+          <TD 
+          style="WIDTH: 335px; BACKGROUND-IMAGE: none; WHITE-SPACE: normal; BACKGROUND-COLOR: #ffd700"><STRONG><FONT 
+            size=3>** Note:</FONT></STRONG></FONT> </FONT><EM><FONT size=1>If 
+            you proceed to take&nbsp;enter marks&nbsp;for the selected Batch and 
+            Exam,&nbsp; the system will immidiately add&nbsp;marks 
+            records&nbsp;for the students with default&nbsp;NULL&nbsp;marks 
+            value. You've to&nbsp;enter marks for the individual 
+            students&nbsp;and press&nbsp; "Update Marks" button.</FONT></EM> 
+            <P></P>
+            <P><EM><FONT size=1><FONT size=3><STRONG>Even</STRONG></FONT> after 
+            going to&nbsp;marks entry&nbsp;page, if you don't want 
+            to&nbsp;enter&nbsp;marks now, then you must press "Discard this 
+            Marks Sheet" button to cancel the records shown on the sheet. 
+            Otherwise you won't be able to enter marks for&nbsp;the certain 
+            Batch and Exam in future (unless the software administrator deletes 
+            the Batch-Exam 
+      combination)</FONT></EM></P></TD></TR></TBODY></TABLE></TD></TR>
   <TR class=runner-body>
     <TD class="runner-left {$blockclass_left}"></TD>
     <TD class="runner-center {$blockclass_center}"></TD>
