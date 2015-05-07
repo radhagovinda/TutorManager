@@ -1,20 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.0.10.7
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: May 07, 2015 at 03:50 PM
--- Server version: 5.6.17
--- PHP Version: 5.5.12
+-- Host: localhost
+-- Generation Time: May 07, 2015 at 02:13 PM
+-- Server version: 5.6.21-70.1-log
+-- PHP Version: 5.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `eduzin1_tuitionmanager`
@@ -50,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `batch` (
   `ClassID` int(11) DEFAULT NULL,
   PRIMARY KEY (`BatchID`),
   UNIQUE KEY `BatchName` (`BatchName`,`SubjectID`,`ClassID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 -- --------------------------------------------------------
 
@@ -114,10 +108,9 @@ CREATE TABLE IF NOT EXISTS `exam_result` (
   `BatchID` int(11) NOT NULL,
   `ExamID` int(11) DEFAULT NULL,
   `MarksObtained` int(11) DEFAULT NULL,
-  `IsPresent` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`ResultID`),
   UNIQUE KEY `StudentID` (`StudentID`,`ExamID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=67 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=58 ;
 
 -- --------------------------------------------------------
 
@@ -269,7 +262,7 @@ CREATE TABLE IF NOT EXISTS `students` (
   `FathersName` varchar(100) DEFAULT NULL,
   `Gender` varchar(50) NOT NULL,
   `DOB` date DEFAULT NULL,
-  `CurrentlyStudyingAt` varchar(100) DEFAULT NULL,
+  `CurrentlyStudyingAt` mediumtext NOT NULL,
   `MobileNumber` varchar(10) DEFAULT NULL,
   `FathersMobileNumber` varchar(10) DEFAULT NULL,
   `HomePhoneNumber` varchar(15) DEFAULT NULL,
@@ -280,7 +273,7 @@ CREATE TABLE IF NOT EXISTS `students` (
   `IsActive` varchar(50) DEFAULT 'Yes',
   PRIMARY KEY (`StudentID`),
   UNIQUE KEY `FirstName` (`FirstName`,`LastName`,`MobileNumber`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=135 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=133 ;
 
 -- --------------------------------------------------------
 
@@ -312,7 +305,7 @@ CREATE TABLE IF NOT EXISTS `student_attendance` (
   `IsPresent` int(11) DEFAULT '0',
   PRIMARY KEY (`ID`),
   UNIQUE KEY `StudentID` (`StudentID`,`BatchID`,`Date`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=92 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=103 ;
 
 -- --------------------------------------------------------
 
@@ -327,7 +320,7 @@ CREATE TABLE IF NOT EXISTS `student_batch` (
   `AcademicYear` year(4) DEFAULT NULL,
   PRIMARY KEY (`ID`),
   UNIQUE KEY `StudentID_2` (`StudentID`,`BatchID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=135 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=133 ;
 
 -- --------------------------------------------------------
 
@@ -346,7 +339,7 @@ CREATE TABLE IF NOT EXISTS `student_payment` (
   `AcademicYear` year(4) NOT NULL,
   PRIMARY KEY (`PaymentID`),
   UNIQUE KEY `StudentID` (`StudentID`,`ClassID`,`SubjectID`,`ForMonth`,`AcademicYear`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -467,7 +460,7 @@ CREATE TABLE IF NOT EXISTS `vw_studentbatch` (
 --
 DROP TABLE IF EXISTS `attendancerecords`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `attendancerecords` AS select `student_attendance`.`ID` AS `ID`,`student_attendance`.`StudentID` AS `StudentID`,trim(concat(`salutations`.`Salutation`,' ',`students`.`FirstName`,' ',`students`.`MiddleName`,' ',`students`.`LastName`)) AS `FullName`,`students`.`FathersName` AS `FathersName`,`student_attendance`.`BatchID` AS `BatchID`,`batch`.`BatchName` AS `BatchName`,`student_attendance`.`Date` AS `Date`,`students`.`MobileNumber` AS `MobileNumber`,`students`.`FathersMobileNumber` AS `FathersMobileNumber`,`student_attendance`.`IsPresent` AS `IsPresent` from (((`student_attendance` left join `students` on((`student_attendance`.`StudentID` = `students`.`StudentID`))) left join `salutations` on((`students`.`SalutationID` = `salutations`.`ID`))) left join `batch` on((`student_attendance`.`BatchID` = `batch`.`BatchID`)));
+CREATE ALGORITHM=UNDEFINED DEFINER=`eduzin1`@`localhost` SQL SECURITY DEFINER VIEW `attendancerecords` AS select `student_attendance`.`ID` AS `ID`,`student_attendance`.`StudentID` AS `StudentID`,trim(concat(`salutations`.`Salutation`,' ',`students`.`FirstName`,' ',`students`.`MiddleName`,' ',`students`.`LastName`)) AS `FullName`,`students`.`FathersName` AS `FathersName`,`student_attendance`.`BatchID` AS `BatchID`,`batch`.`BatchName` AS `BatchName`,`student_attendance`.`Date` AS `Date`,`students`.`MobileNumber` AS `MobileNumber`,`students`.`FathersMobileNumber` AS `FathersMobileNumber`,`student_attendance`.`IsPresent` AS `IsPresent` from (((`student_attendance` left join `students` on((`student_attendance`.`StudentID` = `students`.`StudentID`))) left join `salutations` on((`students`.`SalutationID` = `salutations`.`ID`))) left join `batch` on((`student_attendance`.`BatchID` = `batch`.`BatchID`)));
 
 -- --------------------------------------------------------
 
@@ -476,8 +469,4 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 DROP TABLE IF EXISTS `examresultview`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `examresultview` AS select `exam_result`.`ResultID` AS `ResultID`,`exam_result`.`StudentID` AS `StudentID`,trim(concat(`salutations`.`Salutation`,' ',`students`.`FirstName`,' ',`students`.`MiddleName`,' ',`students`.`LastName`)) AS `FullName`,`exam_result`.`ExamID` AS `ExamID`,`exams`.`ExamName` AS `ExamName`,`class`.`Class` AS `Class`,`subjects`.`Subject` AS `Subject`,`exam_result`.`MarksObtained` AS `MarksObtained`,`class`.`ClassID` AS `ClassID`,`subjects`.`SubjectID` AS `SubjectID`,`students`.`MobileNumber` AS `MobileNumber`,`students`.`FathersMobileNumber` AS `FathersMobileNumber`,`exams`.`FullMarks` AS `FullMarks`,`exams`.`ExamDate` AS `ExamDate` from (((((`exam_result` left join `students` on((`exam_result`.`StudentID` = `students`.`StudentID`))) left join `salutations` on((`students`.`SalutationID` = `salutations`.`ID`))) left join `exams` on((`exam_result`.`ExamID` = `exams`.`ExamID`))) left join `class` on((`exams`.`ForClass` = `class`.`ClassID`))) left join `subjects` on((`exams`.`SubjectID` = `subjects`.`SubjectID`)));
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE VIEW `examresultview` AS select `exam_result`.`ResultID` AS `ResultID`,`exam_result`.`StudentID` AS `StudentID`,trim(concat(`salutations`.`Salutation`,' ',`students`.`FirstName`,' ',`students`.`MiddleName`,' ',`students`.`LastName`)) AS `FullName`,`exam_result`.`ExamID` AS `ExamID`,`exams`.`ExamName` AS `ExamName`,`class`.`Class` AS `Class`,`subjects`.`Subject` AS `Subject`,`exam_result`.`MarksObtained` AS `MarksObtained`,`class`.`ClassID` AS `ClassID`,`subjects`.`SubjectID` AS `SubjectID`,`students`.`MobileNumber` AS `MobileNumber`,`students`.`FathersMobileNumber` AS `FathersMobileNumber`,`exams`.`FullMarks` AS `FullMarks`,`exams`.`ExamDate` AS `ExamDate` from (((((`exam_result` left join `students` on((`exam_result`.`StudentID` = `students`.`StudentID`))) left join `salutations` on((`students`.`SalutationID` = `salutations`.`ID`))) left join `exams` on((`exam_result`.`ExamID` = `exams`.`ExamID`))) left join `class` on((`exams`.`ForClass` = `class`.`ClassID`))) left join `subjects` on((`exams`.`SubjectID` = `subjects`.`SubjectID`)));
