@@ -2,7 +2,7 @@
 <HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
 <META content=IE=7 http-equiv=X-UA-Compatible>
 <META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
-<META name=GENERATOR content="MSHTML 11.00.9600.17126"></HEAD>
+<META name=GENERATOR content="MSHTML 11.00.10011.11"></HEAD>
 <BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
 <TABLE class=runner-toptable cellPadding=0>
   <TBODY>
@@ -153,8 +153,8 @@
                   all</A> </SPAN>{END saveall_link}{BEGIN cancelall_link}<SPAN class=runner-btnframe {$cancelalllink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelalllink_attrs}>Cancel</A> </SPAN>{END cancelall_link}{BEGIN deleteselected_link}<SPAN class=runner-btnframe {$deleteselectedlink_span}><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$deleteselectedlink_attrs}>Delete selected</A> 
                   </SPAN>{END deleteselected_link}</SPAN></TD>
                 {END record_controls_block}<TD class="runner-cc filler">
-                  <SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send Marks SMS to 
-                  Selected Students</A> 
+                  <SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A id=sms_selected1 class=runner-button href="#">Send Marks SMS to Selected 
+      Students</A> 
                   </SPAN></TD></TR></TBODY></TABLE></TD>
           <TD class=runner-cr></TD></TR>
         <TR class="{$cfooterclass_recordcontrols}">
@@ -191,32 +191,32 @@
           {END listIcons_column}{BEGIN checkbox_column}<TH class="runner-cc runner-bc">
             <INPUT type=checkbox 
             {$checkboxheader_attrs}></TH>
-          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TH class="runner-cc ">
-            {BEGIN StudentID_fieldheader}<A {$StudentID_orderlinkattrs}>Student </A>{END StudentID_fieldheader}</TH>
-          {END StudentID_fieldheadercolumn}{BEGIN ExamDate_fieldheadercolumn}<TH class="runner-cc ">
+          {END checkbox_column}{BEGIN ExamName_fieldheadercolumn}<TH class="runner-cc ">
+            {BEGIN ExamName_fieldheader}<A {$ExamName_orderlinkattrs}>Exam Name </A>{END ExamName_fieldheader}</TH>
+          {END ExamName_fieldheadercolumn}{BEGIN ExamDate_fieldheadercolumn}<TH class="runner-cc ">
             {BEGIN ExamDate_fieldheader}<A {$ExamDate_orderlinkattrs}>Exam Date </A>{END ExamDate_fieldheader}</TH>
-          {END ExamDate_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TH class="runner-cc ">
-            {BEGIN ExamID_fieldheader}<A {$ExamID_orderlinkattrs}>Exam </A>{END ExamID_fieldheader}</TH>
-          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TH class="runner-cc ">
+          {END ExamDate_fieldheadercolumn}{BEGIN StudentID_fieldheadercolumn}<TH class="runner-cc ">
+            {BEGIN StudentID_fieldheader}<A {$StudentID_orderlinkattrs}>Student </A>{END StudentID_fieldheader}</TH>
+          {END StudentID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TH class="runner-cc ">
             {BEGIN MarksObtained_fieldheader}<A {$MarksObtained_orderlinkattrs}>Marks Obtained </A>{END MarksObtained_fieldheader}</TH>
           {END MarksObtained_fieldheadercolumn}{BEGIN FullMarks_fieldheadercolumn}<TH class="runner-cc runner-clast">
             {BEGIN FullMarks_fieldheader}<A {$FullMarks_orderlinkattrs}>Full Marks </A>{END FullMarks_fieldheader}</TH>
           {END FullMarks_fieldheadercolumn}<TH class=runner-cr><IMG src="images/spacer.gif"></TH>
           {BEGIN endrecordheader_block}<TH class=runner-cs></TH>{END endrecordheader_block}{END record_header}</TR>{END grid_header}</THEAD>
         <TBODY>
-        {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowstyle} {$rowattrs}>{BEGIN grid_record}
+        {BEGIN grid_row}<TR class="runner-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>{BEGIN grid_record}
           <TD class=runner-cl {$rowstyle}></TD>
-          {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" iEditCont="all" {$rowstyle}>{BEGIN inlineedit_column}
+          {BEGIN listIcons_column}<TD class="runner-cc runner-bc runner-icons" {$rowstyle} iEditCont="all">{BEGIN inlineedit_column}
             {BEGIN inlineedit_link}<A title="Inline Edit" class=runner-button-img {$inlineeditlink_attrs}><IMG class=runner-cicon alt="Inline Edit" src="images/icon_inline_edit_new.gif"></A>{END inlineedit_link}{END inlineedit_column}</TD>
-          {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" iEditCont="checkBox" {$rowstyle}>
+          {END listIcons_column}{BEGIN checkbox_column}<TD class="runner-cc runner-bc" {$rowstyle} iEditCont="checkBox">
             {BEGIN checkbox}<INPUT type=checkbox {$checkbox_attrs}>{END checkbox}</TD>
-          {END checkbox_column}{BEGIN StudentID_fieldcolumn}<TD class="runner-cc  {$StudentID_class}" {$StudentID_style}>
-            {$StudentID_value}</TD>
-          {END StudentID_fieldcolumn}{BEGIN ExamDate_fieldcolumn}<TD class="runner-cc  {$ExamDate_class}" {$ExamDate_style}>
+          {END checkbox_column}{BEGIN ExamName_fieldcolumn}<TD class="runner-cc  {$ExamName_class}" {$ExamName_style}>
+            {$ExamName_value}</TD>
+          {END ExamName_fieldcolumn}{BEGIN ExamDate_fieldcolumn}<TD class="runner-cc  {$ExamDate_class}" {$ExamDate_style}>
             {$ExamDate_value}</TD>
-          {END ExamDate_fieldcolumn}{BEGIN ExamID_fieldcolumn}<TD class="runner-cc  {$ExamID_class}" {$ExamID_style}>
-            {$ExamID_value}</TD>
-          {END ExamID_fieldcolumn}{BEGIN MarksObtained_fieldcolumn}<TD class="runner-cc  {$MarksObtained_class}" {$MarksObtained_style}>
+          {END ExamDate_fieldcolumn}{BEGIN StudentID_fieldcolumn}<TD class="runner-cc  {$StudentID_class}" {$StudentID_style}>
+            {$StudentID_value}</TD>
+          {END StudentID_fieldcolumn}{BEGIN MarksObtained_fieldcolumn}<TD class="runner-cc  {$MarksObtained_class}" {$MarksObtained_style}>
             {$MarksObtained_value}</TD>
           {END MarksObtained_fieldcolumn}{BEGIN FullMarks_fieldcolumn}<TD class="runner-cc runner-clast {$FullMarks_class}" {$FullMarks_style}>
             {$FullMarks_value}</TD>
@@ -227,10 +227,10 @@
           <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
           {BEGIN listIcons_column}<TD class=runner-cc></TD>
           {END listIcons_column}{BEGIN checkbox_column}<TD class=runner-cc></TD>
-          {END checkbox_column}{BEGIN StudentID_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END StudentID_fieldheadercolumn}{BEGIN ExamDate_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END ExamDate_fieldheadercolumn}{BEGIN ExamID_fieldheadercolumn}<TD class="runner-cc "></TD>
-          {END ExamID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END checkbox_column}{BEGIN ExamName_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END ExamName_fieldheadercolumn}{BEGIN ExamDate_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END ExamDate_fieldheadercolumn}{BEGIN StudentID_fieldheadercolumn}<TD class="runner-cc "></TD>
+          {END StudentID_fieldheadercolumn}{BEGIN MarksObtained_fieldheadercolumn}<TD class="runner-cc "></TD>
           {END MarksObtained_fieldheadercolumn}{BEGIN FullMarks_fieldheadercolumn}<TD class="runner-cc runner-clast"></TD>
           {END FullMarks_fieldheadercolumn}<TD class=runner-cr><IMG src="images/spacer.gif"></TD>
           {BEGIN endrecordfooter_block}<TD class=runner-cs></TD>{END endrecordfooter_block}{END record_footer}</TR>{END grid_footer}</TBODY></TABLE>{END grid_block}{END container_grid}
