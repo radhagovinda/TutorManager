@@ -149,7 +149,7 @@ LEFT OUTER JOIN fees_table ON batch.SubjectID = fees_table.SubjectID AND batch.C
 			<m_bNoRecordsFirstPage>0</m_bNoRecordsFirstPage>
 			<m_bShowFieldsInDiagram>1</m_bShowFieldsInDiagram>
 			<m_bEdit>0</m_bEdit>
-			<m_bAdd>0</m_bAdd>
+			<m_bAdd>1</m_bAdd>
 			<m_bDelete>1</m_bDelete>
 			<m_bView>0</m_bView>
 			<m_bCopy>0</m_bCopy>
@@ -30087,10 +30087,10 @@ INNER JOIN student_batch ON students.StudentID = student_batch.StudentID
 INNER JOIN batch ON student_batch.BatchID = batch.BatchID
 INNER JOIN `class` ON batch.ClassID = `class`.ClassID
 INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
-			<m_sqlWhere></m_sqlWhere>
-			<m_sqlTail></m_sqlTail>
+			<m_sqlWhere />
+			<m_sqlTail />
 			<m_bGroupBy>0</m_bGroupBy>
-			<m_strOrderBy></m_strOrderBy>
+			<m_strOrderBy />
 			<m_nType>0</m_nType>
 			<m_strOriginalTable>students</m_strOriginalTable>
 			<m_strDataSourceTable>students</m_strDataSourceTable>
@@ -30217,7 +30217,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>StudentID</m_strName>
 					<m_strSQLExpression>students.StudentID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -30425,7 +30425,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>Photo</m_strName>
 					<m_strSQLExpression>students.Photo</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -30633,7 +30633,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>SalutationID</m_strName>
 					<m_strSQLExpression>students.SalutationID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -31079,7 +31079,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>FirstName</m_strName>
 					<m_strSQLExpression>students.FirstName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -31287,7 +31287,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>MiddleName</m_strName>
 					<m_strSQLExpression>students.MiddleName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -31495,7 +31495,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>LastName</m_strName>
 					<m_strSQLExpression>students.LastName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -31700,7 +31700,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 				<v>
-					<m_strTable></m_strTable>
+					<m_strTable />
 					<m_strName>FullName</m_strName>
 					<m_strSQLExpression>trim(concat(`salutations`.`Salutation`,' ',
 `students`.`FirstName`,' ',
@@ -31914,7 +31914,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>FathersName</m_strName>
 					<m_strSQLExpression>students.FathersName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -32122,7 +32122,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>Gender</m_strName>
 					<m_strSQLExpression>students.Gender</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -32330,7 +32330,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>DOB</m_strName>
 					<m_strSQLExpression>students.DOB</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -32736,7 +32736,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>CurrentlyStudyingAt</m_strName>
 					<m_strSQLExpression>students.CurrentlyStudyingAt</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -32778,8 +32778,8 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nImageBorder>0</m_nImageBorder>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam></m_strhlParam>
-							<m_strFileCustomExpr></m_strFileCustomExpr>
+							<m_strhlParam />
+							<m_strFileCustomExpr />
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -32788,26 +32788,26 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField></m_sAddressField>
-							<m_sLatField></m_sLatField>
-							<m_sLonField></m_sLonField>
-							<m_sMapDescription></m_sMapDescription>
-							<m_strhlPrefix></m_strhlPrefix>
-							<m_strFilename></m_strFilename>
-							<m_strCustomExpr></m_strCustomExpr>
+							<m_sAddressField />
+							<m_sLatField />
+							<m_sLonField />
+							<m_sMapDescription />
+							<m_strhlPrefix />
+							<m_strFilename />
+							<m_strCustomExpr />
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField></m_strTitleField>
+							<m_strTitleField />
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
 							<m_nDecimalDigits>2</m_nDecimalDigits>
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
-							<m_strViewFormat></m_strViewFormat>
+							<m_strViewFormat />
 							<m_page>view</m_page>
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_nThumbWidth>72</m_nThumbWidth>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bShowListOfThumbnails>0</m_bShowListOfThumbnails>
@@ -32822,12 +32822,12 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nSelectSize>1</m_nSelectSize>
 							<m_nCols>200</m_nCols>
 							<m_nRows>100</m_nRows>
-							<m_strDefaultValue></m_strDefaultValue>
+							<m_strDefaultValue />
 							<m_bAutoUpdate>0</m_bAutoUpdate>
-							<m_strValidateAs></m_strValidateAs>
-							<m_strRegex></m_strRegex>
+							<m_strValidateAs />
+							<m_strRegex />
 							<m_strRegexMessage>
-								<text></text>
+								<text />
 								<nameType>Text</nameType>
 							</m_strRegexMessage>
 							<m_bTimestamp>0</m_bTimestamp>
@@ -32846,19 +32846,19 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_pLookupObj>
 								<m_nLookupType>1</m_nLookupType>
 								<m_arrListOfValues />
-								<m_strTable></m_strTable>
-								<m_strLinkField></m_strLinkField>
-								<m_strDisplayField></m_strDisplayField>
-								<m_strOrderBy></m_strOrderBy>
+								<m_strTable />
+								<m_strLinkField />
+								<m_strDisplayField />
+								<m_strOrderBy />
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
 								<m_bAllowToAdd>0</m_bAllowToAdd>
 								<m_horizontalLayout>0</m_horizontalLayout>
 								<m_nControlType>0</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
-								<m_strCategoryFilterField></m_strCategoryFilterField>
-								<m_strCategoryControlField></m_strCategoryControlField>
-								<m_strWhere></m_strWhere>
+								<m_strCategoryFilterField />
+								<m_strCategoryControlField />
+								<m_strWhere />
 								<m_bCustomDisplay>0</m_bCustomDisplay>
 								<m_nLinkFieldType>0</m_nLinkFieldType>
 								<m_arrLookupAutocompletionPairs />
@@ -32870,13 +32870,13 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Text field</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask></m_strEditMask>
+							<m_strEditMask />
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strAutoUpdateValue />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
@@ -32944,7 +32944,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>MobileNumber</m_strName>
 					<m_strSQLExpression>students.MobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -33152,7 +33152,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>FathersMobileNumber</m_strName>
 					<m_strSQLExpression>students.FathersMobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -33360,7 +33360,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>HomePhoneNumber</m_strName>
 					<m_strSQLExpression>students.HomePhoneNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -33568,7 +33568,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>PresentAddress</m_strName>
 					<m_strSQLExpression>students.PresentAddress</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -33776,7 +33776,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>City</m_strName>
 					<m_strSQLExpression>students.City</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -33984,7 +33984,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>PINCode</m_strName>
 					<m_strSQLExpression>students.PINCode</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -34192,7 +34192,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>AdmittedOn</m_strName>
 					<m_strSQLExpression>students.AdmittedOn</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -34400,7 +34400,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>IsActive</m_strName>
 					<m_strSQLExpression>students.IsActive</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>1</m_bEditPage>
@@ -34609,7 +34609,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strName>BatchID</m_strName>
 					<m_strSQLExpression>0</m_strSQLExpression>
 					<m_strSQLAlias>BatchID</m_strSQLAlias>
-					<m_strTotalsType />
+					<m_strTotalsType></m_strTotalsType>
 					<m_bAddPage>1</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
 					<m_bListPage>0</m_bListPage>
@@ -34650,8 +34650,8 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nImageBorder>0</m_nImageBorder>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam />
-							<m_strFileCustomExpr />
+							<m_strhlParam></m_strhlParam>
+							<m_strFileCustomExpr></m_strFileCustomExpr>
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -34660,26 +34660,26 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField />
-							<m_sLatField />
-							<m_sLonField />
-							<m_sMapDescription />
-							<m_strhlPrefix />
-							<m_strFilename />
-							<m_strCustomExpr />
+							<m_sAddressField></m_sAddressField>
+							<m_sLatField></m_sLatField>
+							<m_sLonField></m_sLonField>
+							<m_sMapDescription></m_sMapDescription>
+							<m_strhlPrefix></m_strhlPrefix>
+							<m_strFilename></m_strFilename>
+							<m_strCustomExpr></m_strCustomExpr>
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField />
+							<m_strTitleField></m_strTitleField>
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
 							<m_nDecimalDigits>2</m_nDecimalDigits>
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
-							<m_strViewFormat />
+							<m_strViewFormat></m_strViewFormat>
 							<m_page>view</m_page>
-							<m_pluginInitString />
+							<m_pluginInitString></m_pluginInitString>
 							<m_nThumbWidth>72</m_nThumbWidth>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bShowListOfThumbnails>0</m_bShowListOfThumbnails>
@@ -34694,10 +34694,10 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nSelectSize>4</m_nSelectSize>
 							<m_nCols>200</m_nCols>
 							<m_nRows>100</m_nRows>
-							<m_strDefaultValue />
+							<m_strDefaultValue></m_strDefaultValue>
 							<m_bAutoUpdate>0</m_bAutoUpdate>
 							<m_strValidateAs>Number</m_strValidateAs>
-							<m_strRegex />
+							<m_strRegex></m_strRegex>
 							<m_strRegexMessage>
 								<text>The value is invalid</text>
 								<nameType>Text</nameType>
@@ -34721,16 +34721,16 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 								<m_strTable>batch</m_strTable>
 								<m_strLinkField>BatchID</m_strLinkField>
 								<m_strDisplayField>concat(Subject,'-',Class,' :',BatchName)</m_strDisplayField>
-								<m_strOrderBy />
+								<m_strOrderBy></m_strOrderBy>
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
-								<m_bAllowToAdd>1</m_bAllowToAdd>
+								<m_bAllowToAdd>0</m_bAllowToAdd>
 								<m_horizontalLayout>0</m_horizontalLayout>
 								<m_nControlType>0</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
-								<m_strCategoryFilterField />
-								<m_strCategoryControlField />
-								<m_strWhere />
+								<m_strCategoryFilterField></m_strCategoryFilterField>
+								<m_strCategoryControlField></m_strCategoryControlField>
+								<m_strWhere></m_strWhere>
 								<m_bCustomDisplay>1</m_bCustomDisplay>
 								<m_nLinkFieldType>3</m_nLinkFieldType>
 								<m_arrLookupAutocompletionPairs />
@@ -34742,13 +34742,13 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Lookup wizard</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask />
+							<m_strEditMask></m_strEditMask>
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString />
+							<m_pluginInitString></m_pluginInitString>
 							<m_strAutoUpdateValue />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
@@ -34768,7 +34768,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_bUploadCodeExpression>0</m_bUploadCodeExpression>
 					<m_bDeleteFile>0</m_bDeleteFile>
 					<m_strUploadFolder>files</m_strUploadFolder>
-					<m_codeUploadFolder />
+					<m_codeUploadFolder></m_codeUploadFolder>
 					<m_bAbsolute>0</m_bAbsolute>
 					<m_nFilterOrder>0</m_nFilterOrder>
 					<m_strCodeUploadFolderLanguage>cs</m_strCodeUploadFolderLanguage>
@@ -34816,7 +34816,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>class</m_strTable>
 					<m_strName>Class</m_strName>
 					<m_strSQLExpression>`class`.`Class`</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -34968,7 +34968,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>batch</m_strTable>
 					<m_strName>BatchName</m_strName>
 					<m_strSQLExpression>batch.BatchName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -35120,7 +35120,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>subjects</m_strTable>
 					<m_strName>Subject</m_strName>
 					<m_strSQLExpression>subjects.Subject</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -35709,14 +35709,14 @@ INNER JOIN student_batch ON students.StudentID = student_batch.StudentID
 INNER JOIN batch ON student_batch.BatchID = batch.BatchID
 INNER JOIN `class` ON batch.ClassID = `class`.ClassID
 INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
-				<m_strWhere></m_strWhere>
-				<m_strOrderBy></m_strOrderBy>
-				<m_strTail></m_strTail>
+				<m_strWhere />
+				<m_strOrderBy />
+				<m_strTail />
 				<m_where>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>1</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -35725,10 +35725,10 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 					<m_contained />
 				</m_where>
 				<m_having>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>0</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -35741,9 +35741,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.StudentID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35754,9 +35754,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.Photo</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35767,9 +35767,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.SalutationID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35780,9 +35780,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.FirstName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35793,9 +35793,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.MiddleName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35806,9 +35806,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.LastName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35848,9 +35848,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.FathersName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35861,9 +35861,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.Gender</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35874,9 +35874,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.DOB</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35887,9 +35887,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.CurrentlyStudyingAt</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35900,9 +35900,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.MobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35913,9 +35913,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.FathersMobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35926,9 +35926,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.HomePhoneNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35939,9 +35939,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.PresentAddress</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35952,9 +35952,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.City</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35965,9 +35965,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.PINCode</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35978,9 +35978,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.AdmittedOn</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -35991,9 +35991,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.IsActive</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -36015,9 +36015,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>`class`.`Class`</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>class</m_strTable>
@@ -36028,9 +36028,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>batch.BatchName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>batch</m_strTable>
@@ -36041,9 +36041,9 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>subjects.Subject</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>subjects</m_strTable>
@@ -36058,7 +36058,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_MAIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>students</m_strName>
@@ -36083,12 +36083,12 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>IsActive</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::LogicalExpr</type>
-							<m_strCase></m_strCase>
+							<m_strCase />
 							<m_havingmode>0</m_havingmode>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
@@ -36103,7 +36103,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>salutations</m_strName>
@@ -36113,7 +36113,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Gender</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>students.SalutationID = salutations.ID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -36123,7 +36123,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>students</m_strTable>
@@ -36139,7 +36139,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_INNERJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>student_batch</m_strName>
@@ -36150,7 +36150,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>AcademicYear</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>students.StudentID = student_batch.StudentID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -36160,7 +36160,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>students</m_strTable>
@@ -36176,7 +36176,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_INNERJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>batch</m_strName>
@@ -36187,7 +36187,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>ClassID</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>student_batch.BatchID = batch.BatchID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -36197,7 +36197,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>student_batch</m_strTable>
@@ -36213,7 +36213,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_INNERJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>class</m_strName>
@@ -36222,7 +36222,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Class</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>batch.ClassID = `class`.ClassID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -36232,7 +36232,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>batch</m_strTable>
@@ -36248,7 +36248,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_INNERJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>subjects</m_strName>
@@ -36257,7 +36257,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Subject</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>batch.SubjectID = subjects.SubjectID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -36267,7 +36267,7 @@ INNER JOIN subjects ON batch.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>batch</m_strTable>
@@ -61577,10 +61577,10 @@ students.IsActive,
 0 AS BatchID</m_sqlHead>
 			<m_sqlFrom>FROM students
 LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom>
-			<m_sqlWhere></m_sqlWhere>
-			<m_sqlTail></m_sqlTail>
+			<m_sqlWhere />
+			<m_sqlTail />
 			<m_bGroupBy>0</m_bGroupBy>
-			<m_strOrderBy></m_strOrderBy>
+			<m_strOrderBy />
 			<m_nType>1</m_nType>
 			<m_strOriginalTable>students</m_strOriginalTable>
 			<m_strDataSourceTable>StudentsDetails</m_strDataSourceTable>
@@ -61721,7 +61721,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>StudentID</m_strName>
 					<m_strSQLExpression>students.StudentID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -61929,7 +61929,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>Photo</m_strName>
 					<m_strSQLExpression>students.Photo</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -62137,7 +62137,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>SalutationID</m_strName>
 					<m_strSQLExpression>students.SalutationID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -62583,7 +62583,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>FirstName</m_strName>
 					<m_strSQLExpression>students.FirstName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -62791,7 +62791,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>MiddleName</m_strName>
 					<m_strSQLExpression>students.MiddleName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -62999,7 +62999,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>LastName</m_strName>
 					<m_strSQLExpression>students.LastName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -63204,7 +63204,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 				<v>
-					<m_strTable></m_strTable>
+					<m_strTable />
 					<m_strName>FullName</m_strName>
 					<m_strSQLExpression>trim(concat(`salutations`.`Salutation`,' ',
 `students`.`FirstName`,' ',
@@ -63418,7 +63418,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>FathersName</m_strName>
 					<m_strSQLExpression>students.FathersName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -63626,7 +63626,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>Gender</m_strName>
 					<m_strSQLExpression>students.Gender</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -63834,7 +63834,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>DOB</m_strName>
 					<m_strSQLExpression>students.DOB</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -64240,7 +64240,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>CurrentlyStudyingAt</m_strName>
 					<m_strSQLExpression>students.CurrentlyStudyingAt</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -64282,8 +64282,8 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nImageBorder>0</m_nImageBorder>
 							<m_bhlNewWindow>0</m_bhlNewWindow>
 							<m_nhlDisplay>0</m_nhlDisplay>
-							<m_strhlParam></m_strhlParam>
-							<m_strFileCustomExpr></m_strFileCustomExpr>
+							<m_strhlParam />
+							<m_strFileCustomExpr />
 							<m_bShowThumbnail>0</m_bShowThumbnail>
 							<m_bShowFileSize>0</m_bShowFileSize>
 							<m_bShowIcon>1</m_bShowIcon>
@@ -64292,26 +64292,26 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nMapWidth>300</m_nMapWidth>
 							<m_nMapHeight>225</m_nMapHeight>
 							<m_sMapZoom>15</m_sMapZoom>
-							<m_sAddressField></m_sAddressField>
-							<m_sLatField></m_sLatField>
-							<m_sLonField></m_sLonField>
-							<m_sMapDescription></m_sMapDescription>
-							<m_strhlPrefix></m_strhlPrefix>
-							<m_strFilename></m_strFilename>
-							<m_strCustomExpr></m_strCustomExpr>
+							<m_sAddressField />
+							<m_sLatField />
+							<m_sLonField />
+							<m_sMapDescription />
+							<m_strhlPrefix />
+							<m_strFilename />
+							<m_strCustomExpr />
 							<m_linkWord>
 								<text>Link</text>
 								<nameType>Text</nameType>
 							</m_linkWord>
-							<m_strTitleField></m_strTitleField>
+							<m_strTitleField />
 							<m_nVideoWidth>300</m_nVideoWidth>
 							<m_nVideoHeight>200</m_nVideoHeight>
 							<m_bRewindEnabled>0</m_bRewindEnabled>
 							<m_nDecimalDigits>2</m_nDecimalDigits>
 							<m_bFieldContainsFileURL>0</m_bFieldContainsFileURL>
-							<m_strViewFormat></m_strViewFormat>
+							<m_strViewFormat />
 							<m_page>view</m_page>
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_nThumbWidth>72</m_nThumbWidth>
 							<m_nThumbHeight>72</m_nThumbHeight>
 							<m_bShowListOfThumbnails>0</m_bShowListOfThumbnails>
@@ -64326,12 +64326,12 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nSelectSize>1</m_nSelectSize>
 							<m_nCols>200</m_nCols>
 							<m_nRows>100</m_nRows>
-							<m_strDefaultValue></m_strDefaultValue>
+							<m_strDefaultValue />
 							<m_bAutoUpdate>0</m_bAutoUpdate>
-							<m_strValidateAs></m_strValidateAs>
-							<m_strRegex></m_strRegex>
+							<m_strValidateAs />
+							<m_strRegex />
 							<m_strRegexMessage>
-								<text></text>
+								<text />
 								<nameType>Text</nameType>
 							</m_strRegexMessage>
 							<m_bTimestamp>0</m_bTimestamp>
@@ -64350,19 +64350,19 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_pLookupObj>
 								<m_nLookupType>1</m_nLookupType>
 								<m_arrListOfValues />
-								<m_strTable></m_strTable>
-								<m_strLinkField></m_strLinkField>
-								<m_strDisplayField></m_strDisplayField>
-								<m_strOrderBy></m_strOrderBy>
+								<m_strTable />
+								<m_strLinkField />
+								<m_strDisplayField />
+								<m_strOrderBy />
 								<m_bDesc>0</m_bDesc>
 								<m_bUnique>0</m_bUnique>
 								<m_bAllowToAdd>0</m_bAllowToAdd>
 								<m_horizontalLayout>0</m_horizontalLayout>
 								<m_nControlType>0</m_nControlType>
 								<m_bUseCategory>0</m_bUseCategory>
-								<m_strCategoryFilterField></m_strCategoryFilterField>
-								<m_strCategoryControlField></m_strCategoryControlField>
-								<m_strWhere></m_strWhere>
+								<m_strCategoryFilterField />
+								<m_strCategoryControlField />
+								<m_strWhere />
 								<m_bCustomDisplay>0</m_bCustomDisplay>
 								<m_nLinkFieldType>0</m_nLinkFieldType>
 								<m_arrLookupAutocompletionPairs />
@@ -64374,13 +64374,13 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 							<m_nLastYearFactor>10</m_nLastYearFactor>
 							<m_strEditFormat>Text field</m_strEditFormat>
 							<m_page>edit</m_page>
-							<m_strEditMask></m_strEditMask>
+							<m_strEditMask />
 							<m_MaxNumberOfFiles>1</m_MaxNumberOfFiles>
 							<m_MaxFileSize>0</m_MaxFileSize>
 							<m_TotalFilesSize>0</m_TotalFilesSize>
 							<m_bAutoupload>0</m_bAutoupload>
 							<m_allowedFileTypes />
-							<m_pluginInitString></m_pluginInitString>
+							<m_pluginInitString />
 							<m_strAutoUpdateValue />
 							<m_strDotNetLanguage>cs</m_strDotNetLanguage>
 							<m_strAutoUpdateDotNetLanguage>cs</m_strAutoUpdateDotNetLanguage>
@@ -64448,7 +64448,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>MobileNumber</m_strName>
 					<m_strSQLExpression>students.MobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -64656,7 +64656,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>FathersMobileNumber</m_strName>
 					<m_strSQLExpression>students.FathersMobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -64864,7 +64864,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>HomePhoneNumber</m_strName>
 					<m_strSQLExpression>students.HomePhoneNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -65072,7 +65072,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>PresentAddress</m_strName>
 					<m_strSQLExpression>students.PresentAddress</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -65280,7 +65280,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>City</m_strName>
 					<m_strSQLExpression>students.City</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -65488,7 +65488,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>PINCode</m_strName>
 					<m_strSQLExpression>students.PINCode</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -65696,7 +65696,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>AdmittedOn</m_strName>
 					<m_strSQLExpression>students.AdmittedOn</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -65904,7 +65904,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_strTable>students</m_strTable>
 					<m_strName>IsActive</m_strName>
 					<m_strSQLExpression>students.IsActive</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -66109,7 +66109,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_sqlFrom
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 				<v>
-					<m_strTable></m_strTable>
+					<m_strTable />
 					<m_strName>BatchID</m_strName>
 					<m_strSQLExpression>0</m_strSQLExpression>
 					<m_strSQLAlias>BatchID</m_strSQLAlias>
@@ -66521,14 +66521,14 @@ students.IsActive,
 0 AS BatchID</m_strFieldList>
 				<m_strFrom>FROM students
 LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom>
-				<m_strWhere></m_strWhere>
-				<m_strOrderBy></m_strOrderBy>
-				<m_strTail></m_strTail>
+				<m_strWhere />
+				<m_strOrderBy />
+				<m_strTail />
 				<m_where>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>1</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -66537,10 +66537,10 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 					<m_contained />
 				</m_where>
 				<m_having>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>0</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -66553,9 +66553,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.StudentID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66566,9 +66566,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.Photo</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66579,9 +66579,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.SalutationID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66592,9 +66592,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.FirstName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66605,9 +66605,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.MiddleName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66618,9 +66618,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.LastName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66660,9 +66660,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.FathersName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66673,9 +66673,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.Gender</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66686,9 +66686,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.DOB</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66699,9 +66699,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.CurrentlyStudyingAt</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66712,9 +66712,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.MobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66725,9 +66725,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.FathersMobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66738,9 +66738,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.HomePhoneNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66751,9 +66751,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.PresentAddress</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66764,9 +66764,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.City</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66777,9 +66777,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.PINCode</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66790,9 +66790,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.AdmittedOn</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66803,9 +66803,9 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<m_sql>students.IsActive</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -66831,7 +66831,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_MAIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>students</m_strName>
@@ -66856,12 +66856,12 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 								<val>IsActive</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::LogicalExpr</type>
-							<m_strCase></m_strCase>
+							<m_strCase />
 							<m_havingmode>0</m_havingmode>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
@@ -66876,7 +66876,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>salutations</m_strName>
@@ -66886,7 +66886,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 								<val>Gender</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>students.SalutationID = salutations.ID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -66896,7 +66896,7 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID</m_strFrom
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>students</m_strTable>
@@ -84554,7 +84554,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 					<m_strEventID>EVENT_BEFORESHOW_LIST</m_strEventID>
 					<sub />
 					<m_caption>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</m_caption>
 				</v>
@@ -84607,7 +84607,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 					<m_strEventID>EVENT_JS_ONLOAD</m_strEventID>
 					<sub />
 					<m_caption>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</m_caption>
 				</v>
@@ -84667,10 +84667,10 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID
 LEFT OUTER JOIN exams ON exam_result.ExamID = exams.ExamID
 LEFT OUTER JOIN `class` ON exams.ForClass = `class`.ClassID
 LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
-			<m_sqlWhere></m_sqlWhere>
-			<m_sqlTail></m_sqlTail>
+			<m_sqlWhere />
+			<m_sqlTail />
 			<m_bGroupBy>0</m_bGroupBy>
-			<m_strOrderBy></m_strOrderBy>
+			<m_strOrderBy />
 			<m_nType>1</m_nType>
 			<m_strOriginalTable>exam_result</m_strOriginalTable>
 			<m_strDataSourceTable>examresult</m_strDataSourceTable>
@@ -84833,7 +84833,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exam_result</m_strTable>
 					<m_strName>ResultID</m_strName>
 					<m_strSQLExpression>exam_result.ResultID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -84985,7 +84985,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exam_result</m_strTable>
 					<m_strName>StudentID</m_strName>
 					<m_strSQLExpression>exam_result.StudentID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -85190,7 +85190,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_arrListOfDevicesWithHiddenFields />
 				</v>
 				<v>
-					<m_strTable></m_strTable>
+					<m_strTable />
 					<m_strName>FullName</m_strName>
 					<m_strSQLExpression>trim(concat(`salutations`.`Salutation`,' ',
 `students`.`FirstName`,' ',
@@ -85404,7 +85404,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exam_result</m_strTable>
 					<m_strName>ExamID</m_strName>
 					<m_strSQLExpression>exam_result.ExamID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -85617,7 +85617,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exams</m_strTable>
 					<m_strName>ExamName</m_strName>
 					<m_strSQLExpression>exams.ExamName</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -85825,7 +85825,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>class</m_strTable>
 					<m_strName>Class</m_strName>
 					<m_strSQLExpression>`class`.`Class`</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -86033,7 +86033,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>subjects</m_strTable>
 					<m_strName>Subject</m_strName>
 					<m_strSQLExpression>subjects.Subject</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -86241,7 +86241,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exam_result</m_strTable>
 					<m_strName>MarksObtained</m_strName>
 					<m_strSQLExpression>exam_result.MarksObtained</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -86449,7 +86449,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>class</m_strTable>
 					<m_strName>ClassID</m_strName>
 					<m_strSQLExpression>`class`.ClassID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -86657,7 +86657,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>subjects</m_strTable>
 					<m_strName>SubjectID</m_strName>
 					<m_strSQLExpression>subjects.SubjectID</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -86865,7 +86865,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>MobileNumber</m_strName>
 					<m_strSQLExpression>students.MobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -87017,7 +87017,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>students</m_strTable>
 					<m_strName>FathersMobileNumber</m_strName>
 					<m_strSQLExpression>students.FathersMobileNumber</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -87169,7 +87169,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exams</m_strTable>
 					<m_strName>FullMarks</m_strName>
 					<m_strSQLExpression>exams.FullMarks</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -87321,7 +87321,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_sqlFrom>
 					<m_strTable>exams</m_strTable>
 					<m_strName>ExamDate</m_strName>
 					<m_strSQLExpression>exams.ExamDate</m_strSQLExpression>
-					<m_strSQLAlias></m_strSQLAlias>
+					<m_strSQLAlias />
 					<m_strTotalsType />
 					<m_bAddPage>0</m_bAddPage>
 					<m_bEditPage>0</m_bEditPage>
@@ -87548,14 +87548,14 @@ LEFT OUTER JOIN salutations ON students.SalutationID = salutations.ID
 LEFT OUTER JOIN exams ON exam_result.ExamID = exams.ExamID
 LEFT OUTER JOIN `class` ON exams.ForClass = `class`.ClassID
 LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
-				<m_strWhere></m_strWhere>
-				<m_strOrderBy></m_strOrderBy>
-				<m_strTail></m_strTail>
+				<m_strWhere />
+				<m_strOrderBy />
+				<m_strTail />
 				<m_where>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>1</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -87564,10 +87564,10 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 					<m_contained />
 				</m_where>
 				<m_having>
-					<m_sql></m_sql>
+					<m_sql />
 					<m_parsed>0</m_parsed>
 					<type>SQL::LogicalExpr</type>
-					<m_strCase></m_strCase>
+					<m_strCase />
 					<m_havingmode>0</m_havingmode>
 					<m_inBrackets>0</m_inBrackets>
 					<m_useAlias>0</m_useAlias>
@@ -87580,9 +87580,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exam_result.ResultID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exam_result</m_strTable>
@@ -87593,9 +87593,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exam_result.StudentID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exam_result</m_strTable>
@@ -87635,9 +87635,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exam_result.ExamID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exam_result</m_strTable>
@@ -87648,9 +87648,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exams.ExamName</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exams</m_strTable>
@@ -87661,9 +87661,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>`class`.`Class`</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>class</m_strTable>
@@ -87674,9 +87674,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>subjects.Subject</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>subjects</m_strTable>
@@ -87687,9 +87687,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exam_result.MarksObtained</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exam_result</m_strTable>
@@ -87700,9 +87700,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>`class`.ClassID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>class</m_strTable>
@@ -87713,9 +87713,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>subjects.SubjectID</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>subjects</m_strTable>
@@ -87726,9 +87726,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.MobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -87739,9 +87739,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>students.FathersMobileNumber</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>students</m_strTable>
@@ -87752,9 +87752,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exams.FullMarks</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exams</m_strTable>
@@ -87765,9 +87765,9 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<m_sql>exams.ExamDate</m_sql>
 						<m_parsed>0</m_parsed>
 						<type>SQL::FieldListItem</type>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_expr>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::SQLField</type>
 							<m_strTable>exams</m_strTable>
@@ -87782,7 +87782,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_MAIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>exam_result</m_strName>
@@ -87795,12 +87795,12 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>IsPresent</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::LogicalExpr</type>
-							<m_strCase></m_strCase>
+							<m_strCase />
 							<m_havingmode>0</m_havingmode>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
@@ -87815,7 +87815,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>students</m_strName>
@@ -87840,7 +87840,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>IsActive</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>exam_result.StudentID = students.StudentID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -87850,7 +87850,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>exam_result</m_strTable>
@@ -87866,7 +87866,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>salutations</m_strName>
@@ -87876,7 +87876,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Gender</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>students.SalutationID = salutations.ID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -87886,7 +87886,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>students</m_strTable>
@@ -87902,7 +87902,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>exams</m_strName>
@@ -87915,7 +87915,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>FullMarks</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>exam_result.ExamID = exams.ExamID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -87925,7 +87925,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>exam_result</m_strTable>
@@ -87941,7 +87941,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>class</m_strName>
@@ -87950,7 +87950,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Class</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>exams.ForClass = `class`.ClassID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -87960,7 +87960,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>exams</m_strTable>
@@ -87976,7 +87976,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 						<type>SQL::FromListItem</type>
 						<m_link>SQLL_LEFTJOIN</m_link>
 						<m_table>
-							<m_sql></m_sql>
+							<m_sql />
 							<m_parsed>0</m_parsed>
 							<type>SQL::Table</type>
 							<m_strName>subjects</m_strName>
@@ -87985,7 +87985,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 								<val>Subject</val>
 							</m_columns>
 						</m_table>
-						<m_alias></m_alias>
+						<m_alias />
 						<m_joinon>
 							<m_sql>exams.SubjectID = subjects.SubjectID</m_sql>
 							<m_parsed>1</m_parsed>
@@ -87995,7 +87995,7 @@ LEFT OUTER JOIN subjects ON exams.SubjectID = subjects.SubjectID</m_strFrom>
 							<m_inBrackets>0</m_inBrackets>
 							<m_useAlias>0</m_useAlias>
 							<m_column>
-								<m_sql></m_sql>
+								<m_sql />
 								<m_parsed>0</m_parsed>
 								<type>SQL::SQLField</type>
 								<m_strTable>exams</m_strTable>
@@ -88826,26 +88826,26 @@ echo $str;</m_strEventCode>
 		</v>
 		<v>
 			<m_isRunTime>0</m_isRunTime>
-			<m_strPage></m_strPage>
+			<m_strPage />
 			<m_strName>Send_Marks_to_Students4</m_strName>
-			<m_strEventCode></m_strEventCode>
+			<m_strEventCode />
 			<m_strEventID>EVENT_BUTTON</m_strEventID>
 			<sub>
 				<v>
 					<m_isRunTime>1</m_isRunTime>
-					<m_strPage></m_strPage>
+					<m_strPage />
 					<m_strName>Client Before</m_strName>
-					<m_strEventCode></m_strEventCode>
+					<m_strEventCode />
 					<m_strEventID>EVENT_JS</m_strEventID>
 					<sub />
 					<m_caption>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</m_caption>
 				</v>
 				<v>
 					<m_isRunTime>0</m_isRunTime>
-					<m_strPage></m_strPage>
+					<m_strPage />
 					<m_strName>Server</m_strName>
 					<m_strEventCode>global $dal;
 
@@ -88905,13 +88905,13 @@ if (!$arr["mailed"]) {
 					<m_strEventID>EVENT_SERVER</m_strEventID>
 					<sub />
 					<m_caption>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</m_caption>
 				</v>
 				<v>
 					<m_isRunTime>1</m_isRunTime>
-					<m_strPage></m_strPage>
+					<m_strPage />
 					<m_strName>Client After</m_strName>
 					<m_strEventCode>var message = result["txt"];
 
@@ -88919,7 +88919,7 @@ ctrl.setMessage(message); </m_strEventCode>
 					<m_strEventID>EVENT_JS</m_strEventID>
 					<sub />
 					<m_caption>
-						<text></text>
+						<text />
 						<nameType>Text</nameType>
 					</m_caption>
 				</v>
@@ -90833,72 +90833,72 @@ return true;</m_strEventCode>
 							<v>
 								<m_strField>StudentID</m_strField>
 								<m_strLabel>Student</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>ExamID</m_strField>
 								<m_strLabel>Exam</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>MarksObtained</m_strField>
 								<m_strLabel>Marks Obtained</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>FullName</m_strField>
 								<m_strLabel>Full Name</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>ExamName</m_strField>
 								<m_strLabel>Exam Name</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>Class</m_strField>
 								<m_strLabel>Class</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>Subject</m_strField>
 								<m_strLabel>Subject</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>ClassID</m_strField>
 								<m_strLabel>Class ID</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>SubjectID</m_strField>
 								<m_strLabel>Subject ID</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>ResultID</m_strField>
 								<m_strLabel>Result ID</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>MobileNumber</m_strField>
 								<m_strLabel>Mobile Number</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>FathersMobileNumber</m_strField>
 								<m_strLabel>Fathers Mobile Number</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>FullMarks</m_strField>
 								<m_strLabel>Full Marks</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 							<v>
 								<m_strField>ExamDate</m_strField>
 								<m_strLabel>Exam Date</m_strLabel>
-								<m_strTooltip></m_strTooltip>
+								<m_strTooltip />
 							</v>
 						</m_arrFieldLabels>
 					</v>
@@ -91196,7 +91196,7 @@ return true;</m_strEventCode>
 					<dbkey>BatchID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91232,7 +91232,7 @@ return true;</m_strEventCode>
 					<dbkey>ClassID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91316,7 +91316,7 @@ return true;</m_strEventCode>
 					<dbkey>ResultID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91400,7 +91400,7 @@ return true;</m_strEventCode>
 					<dbkey>ExamID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91460,7 +91460,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91496,7 +91496,7 @@ return true;</m_strEventCode>
 					<dbkey>MonthID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91556,7 +91556,7 @@ return true;</m_strEventCode>
 					<dbkey>SMSID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91604,7 +91604,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91796,7 +91796,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91844,7 +91844,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91916,7 +91916,7 @@ return true;</m_strEventCode>
 					<dbkey>TemplateID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -91976,7 +91976,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -92048,7 +92048,7 @@ return true;</m_strEventCode>
 					<dbkey>ID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -92156,703 +92156,7 @@ return true;</m_strEventCode>
 					<dbkey>PaymentID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>students_prev_records</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>ID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>StudentID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>ClassID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>SubjectID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>BatchID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>AcademicYear</name>
-						<type>13</type>
-						<typeName>year</typeName>
-						<size>4</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>ID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>subjects</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>SubjectID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Subject</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>SubjectID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>support_request</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>ID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>UserID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>DateNTime</name>
-						<type>135</type>
-						<typeName>datetime</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Subject</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Details</name>
-						<type>201</type>
-						<typeName>text</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Response</name>
-						<type>201</type>
-						<typeName>text</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>ResponseDateNTime</name>
-						<type>135</type>
-						<typeName>datetime</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Status</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>6</size>
-						<scale>0</scale>
-						<defaultValue>Open</defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>ID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>users</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>ID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>LoginID</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>15</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Password</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>UserName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>50</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>EmailID</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>IsActive</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>ActivationCode</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>IsAdministrator</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>ID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>useraccess_ugrights</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>TableName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>50</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>GroupID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue>0</defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>AccessMask</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>10</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>TableName</dbkey>
-					<dbkey>GroupID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>msg_sms_marks</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>SMSID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>MobileNumbers</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>500</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Message</name>
-						<type>201</type>
-						<typeName>mediumtext</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>DateTime</name>
-						<type>135</type>
-						<typeName>datetime</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>SMSID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>msg_sms_attendance</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>ID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>MobileNumber</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>10</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Message</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>200</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>ID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>attendancerecords</name>
-				<type>1</type>
-				<dbfields>
-					<dbfield>
-						<name>ID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue>0</defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>StudentID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>FullName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>203</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>FathersName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>BatchID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>BatchName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>100</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Date</name>
-						<type>7</type>
-						<typeName>date</typeName>
-						<size>0</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>MobileNumber</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>10</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>FathersMobileNumber</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>10</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>IsPresent</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue>0</defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys />
-				<dbfkeys />
-				<pbclean>1683808</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>useraccess_uggroups</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>GroupID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>1</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>Label</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>50</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>1</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>GroupID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1678896</pbclean>
-			</v>
-			<v>
-				<schema></schema>
-				<name>useraccess_ugmembers</name>
-				<type>0</type>
-				<dbfields>
-					<dbfield>
-						<name>UserName</name>
-						<type>200</type>
-						<typeName>varchar</typeName>
-						<size>50</size>
-						<scale>0</scale>
-						<defaultValue></defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-					<dbfield>
-						<name>GroupID</name>
-						<type>3</type>
-						<typeName>int</typeName>
-						<size>11</size>
-						<scale>0</scale>
-						<defaultValue>0</defaultValue>
-						<nullable>0</nullable>
-						<autoInc>0</autoInc>
-						<charset></charset>
-						<enumValues />
-					</dbfield>
-				</dbfields>
-				<dbkeys>
-					<dbkey>UserName</dbkey>
-					<dbkey>GroupID</dbkey>
-				</dbkeys>
-				<dbfkeys />
-				<pbclean>1678896</pbclean>
+				<pbclean>1677820</pbclean>
 			</v>
 			<v>
 				<schema></schema>
@@ -93080,7 +92384,703 @@ return true;</m_strEventCode>
 					<dbkey>StudentID</dbkey>
 				</dbkeys>
 				<dbfkeys />
-				<pbclean>1630680</pbclean>
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>students_prev_records</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>ID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>StudentID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>ClassID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>SubjectID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>BatchID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>AcademicYear</name>
+						<type>13</type>
+						<typeName>year</typeName>
+						<size>4</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>ID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>subjects</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>SubjectID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Subject</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>SubjectID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>support_request</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>ID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>UserID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>DateNTime</name>
+						<type>135</type>
+						<typeName>datetime</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Subject</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Details</name>
+						<type>201</type>
+						<typeName>text</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Response</name>
+						<type>201</type>
+						<typeName>text</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>ResponseDateNTime</name>
+						<type>135</type>
+						<typeName>datetime</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Status</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>6</size>
+						<scale>0</scale>
+						<defaultValue>Open</defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>ID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>users</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>ID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>LoginID</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>15</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Password</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>UserName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>EmailID</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>IsActive</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>ActivationCode</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>IsAdministrator</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>ID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>useraccess_ugrights</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>TableName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>GroupID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue>0</defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>AccessMask</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>10</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>TableName</dbkey>
+					<dbkey>GroupID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>msg_sms_marks</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>SMSID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>MobileNumbers</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>500</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Message</name>
+						<type>201</type>
+						<typeName>mediumtext</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>DateTime</name>
+						<type>135</type>
+						<typeName>datetime</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>SMSID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>msg_sms_attendance</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>ID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>MobileNumber</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>10</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Message</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>200</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>ID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>attendancerecords</name>
+				<type>1</type>
+				<dbfields>
+					<dbfield>
+						<name>ID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue>0</defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>StudentID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>FullName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>203</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>FathersName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>BatchID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>BatchName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>100</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Date</name>
+						<type>7</type>
+						<typeName>date</typeName>
+						<size>0</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>MobileNumber</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>10</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>FathersMobileNumber</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>10</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>IsPresent</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue>0</defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys />
+				<dbfkeys />
+				<pbclean>1677820</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>useraccess_uggroups</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>GroupID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>1</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>Label</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>1</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>GroupID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1679800</pbclean>
+			</v>
+			<v>
+				<schema></schema>
+				<name>useraccess_ugmembers</name>
+				<type>0</type>
+				<dbfields>
+					<dbfield>
+						<name>UserName</name>
+						<type>200</type>
+						<typeName>varchar</typeName>
+						<size>50</size>
+						<scale>0</scale>
+						<defaultValue></defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+					<dbfield>
+						<name>GroupID</name>
+						<type>3</type>
+						<typeName>int</typeName>
+						<size>11</size>
+						<scale>0</scale>
+						<defaultValue>0</defaultValue>
+						<nullable>0</nullable>
+						<autoInc>0</autoInc>
+						<charset></charset>
+						<enumValues />
+					</dbfield>
+				</dbfields>
+				<dbkeys>
+					<dbkey>UserName</dbkey>
+					<dbkey>GroupID</dbkey>
+				</dbkeys>
+				<dbfkeys />
+				<pbclean>1679800</pbclean>
 			</v>
 		</dbtables>
 		<m_strCacheConnString>mysql;localhost;eduzin1_admin;tamal1972;;eduzin1_tuitionmanager;;1</m_strCacheConnString>
@@ -93232,8 +93232,8 @@ return true;</m_strEventCode>
 		<m_bUseBuiltInMailer>1</m_bUseBuiltInMailer>
 	</Registration>
 	<BuildInfo>
-		<m_nBuildTimeLow>-1840367600</m_nBuildTimeLow>
-		<m_nBuildTimeHigh>30443724</m_nBuildTimeHigh>
+		<m_nBuildTimeLow>400715104</m_nBuildTimeLow>
+		<m_nBuildTimeHigh>30443726</m_nBuildTimeHigh>
 		<nonProcessFiles>
 			<v>
 				<filename>D:\PortableApps\PHPRunner6.2\source\classes\advancedsearchcontrol.php</filename>
@@ -98094,8 +98094,38 @@ return true;</m_strEventCode>
 				<filename>C:\wamp\www\tutormanager\users_add.php</filename>
 				<source>C:\PortableApps\PHPRunner6.2\source\add.php</source>
 			</v>
+			<v>
+				<filename>C:\wamp\www\tutormanager\templates\batch_add.htm</filename>
+				<source>C:\PortableApps\PHPRunner6.2\templates\layouts\add2.ly</source>
+			</v>
 		</builtFiles>
-		<m_builtDBTables />
+		<m_builtDBTables>
+			<v>attendancerecords</v>
+			<v>batch</v>
+			<v>class</v>
+			<v>exam_result</v>
+			<v>exams</v>
+			<v>fees_table</v>
+			<v>months</v>
+			<v>msg_sms</v>
+			<v>msg_sms_attendance</v>
+			<v>msg_sms_batch</v>
+			<v>msg_sms_marks</v>
+			<v>options</v>
+			<v>salutations</v>
+			<v>sms_template</v>
+			<v>student_attendance</v>
+			<v>student_batch</v>
+			<v>student_payment</v>
+			<v>students</v>
+			<v>students_prev_records</v>
+			<v>subjects</v>
+			<v>support_request</v>
+			<v>useraccess_uggroups</v>
+			<v>useraccess_ugmembers</v>
+			<v>useraccess_ugrights</v>
+			<v>users</v>
+		</m_builtDBTables>
 	</BuildInfo>
 	<m_strAppUser>.:[BRD CULT]:.</m_strAppUser>
 	<m_controlLinks />
@@ -98149,7 +98179,7 @@ return true;</m_strEventCode>
 		</v>
 		<v>
 			<m_name>batch_list.htm</m_name>
-			<m_origCrc>-339277682</m_origCrc>
+			<m_origCrc>-1483903924</m_origCrc>
 		</v>
 		<v>
 			<m_name>exams_list.htm</m_name>
@@ -98311,7 +98341,7 @@ return true;</m_strEventCode>
 	<m_bOldMysqlLib>0</m_bOldMysqlLib>
 	<m_bWebReports>0</m_bWebReports>
 	<m_strWRAdminPassword>webreports</m_strWRAdminPassword>
-	<m_projectBuildNumber>507</m_projectBuildNumber>
+	<m_projectBuildNumber>511</m_projectBuildNumber>
 	<m_FTPlocation />
 	<m_FrontPagelocation />
 	<FTPFiles />
